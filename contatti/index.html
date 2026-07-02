@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preventivo sito web gratuito — Crederai</title>
+  <meta name="description" content="Richiedi un preventivo gratuito per il tuo sito web. Risposta entro 24 ore. Nessun impegno.">
+  <link rel="canonical" href="https://crederai.com/contatti/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Preventivo sito web gratuito — Crederai">
+  <meta property="og:description" content="Richiedi un preventivo gratuito. Risposta entro 24 ore, nessun impegno.">
+  <meta property="og:url" content="https://crederai.com/contatti/">
+  <meta property="og:locale" content="it_IT">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto principale</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/">Creder<span>ai</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Apri il menu di navigazione">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/servizi/">Servizi</a></li>
+        <li><a href="/lavori/">Lavori</a></li>
+        <li><a href="/chi-siamo/">Chi siamo</a></li>
+        <li><a class="btn btn-primary btn-sm" href="/contatti/" aria-current="page">Richiedi un preventivo</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" style="padding-bottom: 40px;">
+      <div class="container">
+        <h1>Parliamo del tuo progetto</h1>
+        <p class="lead">Compila il form: ti risponderemo entro 24 ore con una valutazione chiara di come possiamo aiutarti.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 16px;">
+      <div class="container">
+        <!--
+          Form backend: Formspree (piano free, 50 invii/mese).
+          1. Crea un account su formspree.io con hello@crederai.com
+          2. Crea un form e sostituisci FORM_ID nell'action qui sotto
+          3. Imposta il redirect alla thank-you page nelle impostazioni Formspree
+        -->
+        <form id="form-preventivo" class="form-grid" action="https://formspree.io/f/FORM_ID" method="POST">
+          <input type="hidden" name="_next" value="https://crederai.com/grazie/">
+          <input type="hidden" name="_subject" value="Nuova richiesta di preventivo — crederai.com">
+
+          <div class="form-field">
+            <label for="nome">Nome e cognome <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="Mario Rossi">
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="mario@tuaazienda.it">
+          </div>
+
+          <div class="form-field">
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="+39 06 1234567">
+          </div>
+
+          <div class="form-field">
+            <label for="azienda">Azienda / Studio</label>
+            <input type="text" id="azienda" name="azienda" autocomplete="organization" placeholder="Nome della tua attività">
+          </div>
+
+          <div class="form-field">
+            <label for="tipo-progetto">Tipo di progetto <span class="req" aria-hidden="true">*</span></label>
+            <select id="tipo-progetto" name="tipo_progetto" required>
+              <option value="">Seleziona…</option>
+              <option>Sito vetrina</option>
+              <option>Landing page</option>
+              <option>E-commerce</option>
+              <option>Restyling</option>
+              <option>Non so ancora</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="fonte">Come hai trovato Crederai?</label>
+            <select id="fonte" name="fonte">
+              <option value="">Seleziona…</option>
+              <option>Google</option>
+              <option>LinkedIn</option>
+              <option>Passaparola</option>
+              <option>Altro</option>
+            </select>
+          </div>
+
+          <div class="form-field form-field-full">
+            <label for="messaggio">Descrivi brevemente il progetto <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="messaggio" name="messaggio" required maxlength="500" placeholder="Cosa fa la tua azienda e cosa vorresti dal sito?"></textarea>
+          </div>
+
+          <div class="hp-field" aria-hidden="true">
+            <label for="website">Non compilare questo campo</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-field form-field-full">
+            <div class="checkbox-field">
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <label for="privacy">Ho letto l'<a href="/privacy-policy/">informativa privacy</a> e acconsento al trattamento dei dati personali per rispondere alla mia richiesta (art. 6 par. 1 lett. b GDPR) <span class="req" aria-hidden="true">*</span></label>
+            </div>
+          </div>
+
+          <div class="form-field form-field-full">
+            <button type="submit" class="btn btn-primary">Invia la richiesta</button>
+            <p class="form-note">Risposta garantita entro 24 ore · Nessuno spam · Nessun impegno</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Informazioni di contatto</h2>
+        <p>Email: <a href="mailto:hello@crederai.com">hello@crederai.com</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/company/crederai" rel="noopener">linkedin.com/company/crederai</a></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="section-label">FAQ</span>
+        <h2>Domande frequenti</h2>
+        <div style="max-width: 760px; margin-top: 24px;">
+          <details class="faq-item">
+            <summary>Cosa succede dopo che invio il form?</summary>
+            <p>Ricevi subito un'email di conferma. Entro 24 ore ti contattiamo per fissare una chiamata conoscitiva di 20-30 minuti, dove capiamo il tuo progetto e valutiamo insieme il percorso migliore.</p>
+          </details>
+          <details class="faq-item">
+            <summary>La consulenza iniziale è gratuita?</summary>
+            <p>Sì, sempre. Non facciamo offerte al buio: prima ascoltiamo, poi proponiamo.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Quanto costa un sito web?</summary>
+            <p>Dipende dal progetto. Non pubblichiamo prezzi fissi perché ogni realtà ha esigenze diverse — un sito che funziona per uno studio legale non è lo stesso di un e-commerce. Dopo la chiamata conoscitiva ricevi un preventivo dettagliato e trasparente.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="/">Creder<span style="color:#A5B4FC">ai</span></a>
+          <p style="margin-top: 12px; max-width: 320px;">Siti web professionali per PMI italiane. Roma e tutta Italia.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="/servizi/">Servizi</a></li>
+          <li><a href="/lavori/">Lavori</a></li>
+          <li><a href="/chi-siamo/">Chi siamo</a></li>
+          <li><a href="/contatti/">Contatti</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Crederai — hello@crederai.com</span>
+        <span><a href="/privacy-policy/">Privacy Policy</a> · <a href="/cookie-policy/">Cookie Policy</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner" hidden role="dialog" aria-labelledby="cookie-title">
+    <h2 id="cookie-title">Cookie e privacy</h2>
+    <p>Usiamo cookie analitici solo con il tuo consenso, per capire come migliorare il sito. Nessun cookie di profilazione. <a href="/cookie-policy/">Cookie Policy</a></p>
+    <div class="cookie-actions">
+      <button class="btn btn-primary btn-sm" id="cookie-accept">Accetta</button>
+      <button class="btn btn-secondary btn-sm" id="cookie-reject">Rifiuta</button>
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
