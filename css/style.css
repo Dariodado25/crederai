@@ -167,11 +167,12 @@ img { max-width: 100%; height: auto; display: block; }
   border: none;
   cursor: pointer;
   text-align: center;
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  transition: background 0.15s, color 0.15s, border-color 0.15s, transform 0.15s, box-shadow 0.15s;
 }
 
-.btn-primary { background: var(--accent); color: #fff; }
-.btn-primary:hover { background: var(--accent-hover); color: #fff; text-decoration: none; }
+.btn-primary { background: var(--accent); color: #fff; box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+.btn-primary:hover { background: var(--accent-hover); color: #fff; text-decoration: none; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3); }
+.btn-primary:active { transform: translateY(0); }
 
 .btn-secondary {
   background: transparent;
@@ -186,10 +187,28 @@ img { max-width: 100%; height: auto; display: block; }
 .link-arrow { font-weight: 600; white-space: nowrap; }
 
 /* ---------- Hero ---------- */
-.hero { padding: 88px 0 72px; }
+.hero {
+  padding: 88px 0 72px;
+  position: relative;
+  background-image:
+    radial-gradient(ellipse 800px 400px at 85% -10%, rgba(79, 70, 229, 0.08), transparent),
+    radial-gradient(ellipse 600px 300px at 10% 110%, rgba(249, 115, 22, 0.05), transparent);
+}
 .hero h1 { font-size: 3.5rem; max-width: 720px; }
+.hero h1 .accent { color: var(--brand); }
 .hero .lead { font-size: 1.25rem; margin-bottom: 32px; }
 .hero-ctas { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+
+/* ---------- Scroll reveal (attivo solo con JS, rispetta reduced-motion) ---------- */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.js .reveal.visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal { opacity: 1; transform: none; }
+}
 
 /* ---------- Stats ---------- */
 .stats {
@@ -218,7 +237,7 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 28px;
   transition: box-shadow 0.2s, transform 0.2s;
 }
-.card:hover { box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.card:hover { box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transform: translateY(-2px); }
 
 .card h3 { margin-top: 12px; }
 .card-icon {
@@ -239,11 +258,11 @@ img { max-width: 100%; height: auto; display: block; }
   border: 1px solid var(--border);
   border-radius: var(--radius-card);
   overflow: hidden;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s;
   display: flex;
   flex-direction: column;
 }
-.project-card:hover { box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+.project-card:hover { box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transform: translateY(-3px); }
 
 .project-cover {
   aspect-ratio: 3 / 2;

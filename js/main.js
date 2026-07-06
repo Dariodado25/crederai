@@ -4,13 +4,46 @@
 (function () {
   "use strict";
 
+  document.documentElement.classList.add("js");
+
   // ---------- Nav mobile ----------
   var toggle = document.querySelector(".nav-toggle");
   var links = document.querySelector(".nav-links");
+  function closeNav() {
+    if (links && links.classList.contains("open")) {
+      links.classList.remove("open");
+      if (toggle) toggle.setAttribute("aria-expanded", "false");
+    }
+  }
   if (toggle && links) {
     toggle.addEventListener("click", function () {
       var open = links.classList.toggle("open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    links.addEventListener("click", function (e) {
+      if (e.target.closest("a")) closeNav();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeNav();
+    });
+  }
+
+  // ---------- Scroll reveal ----------
+  // Applica l'animazione di ingresso a card e step senza toccare l'HTML.
+  if ("IntersectionObserver" in window) {
+    var revealTargets = document.querySelectorAll(".card, .project-card, .step, .stats > div");
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    revealTargets.forEach(function (el, i) {
+      el.classList.add("reveal");
+      el.style.transitionDelay = Math.min(i % 3 * 80, 240) + "ms";
+      observer.observe(el);
     });
   }
 

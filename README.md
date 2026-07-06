@@ -38,7 +38,7 @@ I link interni usano percorsi assoluti (`/css/...`), quindi il sito va servito d
 
 ## TODO prima del lancio
 
-- [ ] Registrare crederai.com e collegarlo all'hosting (GitHub Pages / Cloudflare Pages)
+- [ ] Registrare crederai.com e collegarlo al progetto Vercel (Settings → Domains)
 - [ ] Creare form su formspree.io e sostituire `FORM_ID` in `contatti/index.html`
 - [ ] Creare proprietà GA4 e sostituire `G-XXXXXXXXXX` in `js/main.js`
 - [ ] Completare nome e bio di Persona B in `chi-siamo/index.html`
@@ -47,6 +47,6 @@ I link interni usano percorsi assoluti (`/css/...`), quindi il sito va servito d
 - [ ] Google Search Console: verifica proprietà + invio sitemap
 - [ ] Google Business Profile
 
-## Deploy su GitHub Pages
+## Deploy su Vercel
 
-Il sito è pronto per GitHub Pages (branch `main`, root). La pagina `404.html` in root viene servita automaticamente da Pages per gli URL inesistenti.
+Il sito è configurato per Vercel (`vercel.json`: trailing slash, security headers, cache asset). Import del repo da vercel.com → il deploy è automatico a ogni push su `main`. La pagina `404.html` in root viene servita automaticamente per gli URL inesistenti.
