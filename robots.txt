@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /grazie/
-
-Sitemap: https://crederai.com/sitemap.xml

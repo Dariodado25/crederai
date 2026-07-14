@@ -1,214 +1,1896 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#4F46E5">
-  <title>Crederai — Siti web per PMI a Roma</title>
-  <meta name="description" content="Progettiamo siti web professionali per PMI a Roma e in tutta Italia. Risultati misurabili, tempi certi, autonomia garantita. Preventivo gratuito.">
-  <link rel="canonical" href="https://crederai.com/">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Crederai — Siti web per PMI a Roma">
-  <meta property="og:description" content="Progettiamo siti web che portano clienti alle PMI italiane. Preventivo gratuito, risposta entro 24 ore.">
-  <meta property="og:url" content="https://crederai.com/">
-  <meta property="og:locale" content="it_IT">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["ProfessionalService", "LocalBusiness"],
-    "name": "Crederai",
-    "description": "Agenzia web specializzata in siti web professionali per PMI italiane. Realizziamo siti vetrina, landing page ed e-commerce con approccio consulenziale e risultati documentati.",
-    "url": "https://crederai.com",
-    "email": "hello@crederai.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Roma",
-      "addressRegion": "RM",
-      "addressCountry": "IT"
-    },
-    "geo": { "@type": "GeoCoordinates", "latitude": "41.9028", "longitude": "12.4964" },
-    "areaServed": { "@type": "Country", "name": "Italia" },
-    "serviceType": ["Realizzazione siti web", "Web design", "Landing page", "E-commerce", "SEO"],
-    "priceRange": "€€",
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "09:00",
-      "closes": "18:00"
-    }
-  }
-  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crederai — Siti web che portano clienti alle PMI italiane</title>
+<meta name="description" content="Agenzia web a Roma: progettiamo siti vetrina, landing page e restyling per PMI e liberi professionisti in tutta Italia. Risposta entro 24 ore, preventivo gratuito.">
+<link rel="canonical" href="https://crederai.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Crederai">
+<meta property="og:title" content="Crederai — Siti web che portano clienti alle PMI italiane">
+<meta property="og:description" content="Progettiamo siti web professionali per PMI e liberi professionisti a Roma e in tutta Italia. Risposta entro 24 ore, preventivo gratuito.">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Crederai — Siti web che portano clienti alle PMI italiane">
+<meta name="twitter:description" content="Progettiamo siti web professionali per PMI e liberi professionisti a Roma e in tutta Italia.">
+<meta name="theme-color" content="#0F172A">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F172A'/%3E%3Ctext x='11' y='23' font-family='Arial,Helvetica,sans-serif' font-weight='800' font-size='19' fill='%23FAFAF8'%3EC%3C/text%3E%3Ccircle cx='24.5' cy='23.5' r='2.6' fill='%23F97316'/%3E%3C/svg%3E">
+<script src="./support.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Vai al contenuto principale</a>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #FAFAF8; }
+    button { font: inherit; }
+    ::selection { background: #F97316; color: #FFFFFF; }
+    html { scrollbar-color: #CBD5E1 #FAFAF8; scrollbar-width: thin; }
+    ::-webkit-scrollbar { width: 11px; height: 11px; }
+    ::-webkit-scrollbar-track { background: #FAFAF8; }
+    ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 999px; border: 3px solid #FAFAF8; background-clip: padding-box; }
+    ::-webkit-scrollbar-thumb:hover { background: #94A3B8; background-clip: padding-box; }
+    @keyframes cred-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @keyframes cred-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    @keyframes cred-fade { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes cred-letter { from { opacity: 0; transform: translateY(0.4em) rotate(8deg); } to { opacity: 1; transform: none; } }
+    @keyframes cred-pan { from { background-position: 0 0; } to { background-position: 56px 56px; } }
+    @keyframes cred-pan-dots { from { background-position: 0 0; } to { background-position: 24px 24px; } }
+    @keyframes cred-blob { 0%, 100% { transform: translate(0, 0) scale(1); } 33% { transform: translate(34px, -22px) scale(1.09); } 66% { transform: translate(-24px, 18px) scale(0.94); } }
+    @keyframes cred-pulsec { 0%, 100% { opacity: 0.55; transform: translateX(-50%) scale(1); } 50% { opacity: 1; transform: translateX(-50%) scale(1.14); } }
+    @keyframes cred-confetti { to { transform: translateY(110vh) rotate(720deg); opacity: 0; } }
+    @keyframes cred-in-left { from { opacity: 0; transform: translateX(-48px); } to { opacity: 1; transform: none; } }
+    @keyframes cred-in-right { from { opacity: 0; transform: translateX(48px); } to { opacity: 1; transform: none; } }
+    @keyframes cred-in-up { from { opacity: 0; transform: translateY(44px); } to { opacity: 1; transform: none; } }
+    @keyframes cred-clip { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+    @keyframes cred-pop { 0% { opacity: 0; transform: scale(0.3); } 60% { transform: scale(1.15); } 100% { opacity: 1; transform: scale(1); } }
+    @keyframes cred-zoom { from { opacity: 0; transform: scale(1.05); } to { opacity: 1; transform: scale(1); } }
+    @keyframes cred-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @keyframes cred-spin { to { transform: rotate(360deg); } }
+    @keyframes cred-aurora-rot { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes cred-kenburns { 0% { transform: scale(1); } 100% { transform: scale(1.09); } }
+    @keyframes cred-cursor {
+      0% { transform: translate(22px,24px) scale(1); opacity: 0; }
+      6% { opacity: .95; }
+      22% { transform: translate(150px,32px) scale(1); }
+      27% { transform: translate(150px,32px) scale(.6); }
+      32% { transform: translate(150px,32px) scale(1); }
+      55% { transform: translate(94px,128px) scale(1); }
+      60% { transform: translate(94px,128px) scale(.6); }
+      65% { transform: translate(94px,128px) scale(1); }
+      90% { opacity: .95; }
+      100% { transform: translate(22px,24px) scale(1); opacity: 0; }
+    }
+    @keyframes cred-drift { 0%, 100% { transform: translate(0,0) scale(1.08); } 50% { transform: translate(-1.6%, -1.4%) scale(1.14); } }
+    @keyframes cred-sweep { 0% { transform: translateX(-130%) skewX(-16deg); } 100% { transform: translateX(240%) skewX(-16deg); } }
+    @keyframes cred-rise { 0% { transform: translateY(0) scale(1); opacity: 0; } 12% { opacity: .7; } 86% { opacity: .7; } 100% { transform: translateY(-340px) scale(1.35); opacity: 0; } }
+    @keyframes cred-pulse-dot { 0%, 100% { box-shadow: 0 0 0 0 rgba(16,185,129,0.45); } 50% { box-shadow: 0 0 0 7px rgba(16,185,129,0); } }
+    @keyframes cred-flow { 0% { left: -12%; opacity: 0; } 8% { opacity: 1; } 92% { opacity: 1; } 100% { left: 106%; opacity: 0; } }
+    @keyframes cred-vgrow { to { height: 100%; } }
+    @keyframes cred-check-draw { to { stroke-dashoffset: 0; } }
+    @keyframes cred-shimmer { 0% { transform: translateX(-120%) skewX(-14deg); } 100% { transform: translateX(220%) skewX(-14deg); } }
+    @keyframes cred-glow-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(249,115,22,0.45); } 50% { box-shadow: 0 0 0 5px rgba(249,115,22,0); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 
-  <header class="site-header">
-    <div class="container nav">
-      <a class="logo" href="/">Creder<span>ai</span></a>
-      <button class="nav-toggle" aria-expanded="false" aria-label="Apri il menu di navigazione">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="/" aria-current="page">Home</a></li>
-        <li><a href="/servizi/">Servizi</a></li>
-        <li><a href="/lavori/">Lavori</a></li>
-        <li><a href="/chi-siamo/">Chi siamo</a></li>
-        <li><a class="btn btn-primary btn-sm" href="/contatti/">Richiedi un preventivo</a></li>
-      </ul>
+    /* ===== Responsive ===== */
+    .cred-nav-toggle { display: none; }
+    @media (max-width: 880px) {
+      .cred-nav-links { display: none !important; }
+      .cred-nav-toggle { display: inline-flex !important; }
+    }
+    @media (max-width: 900px) {
+      .cred-stack-md { grid-template-columns: 1fr !important; }
+      .cred-sticky-off-md { position: static !important; top: auto !important; }
+    }
+    @media (max-width: 640px) {
+      .cred-stack-sm { grid-template-columns: 1fr !important; }
+    }
+  </style>
+</helmet>
+
+<div style="font-family:Inter,sans-serif;background:#FAFAF8;color:#111827;min-height:100vh">
+
+  <!-- ============ NAV ============ -->
+  <nav style="position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(15,23,42,0.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.08)">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px);height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <button onClick="{{ goHome }}" style="background:none;border:none;cursor:pointer;padding:0;display:flex;align-items:baseline;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:21px;color:#FFFFFF;letter-spacing:-0.02em">{{ brand }}<span style="color:#F97316">.</span></button>
+      <div class="cred-nav-links" style="display:flex;align-items:center;gap:clamp(14px,2.5vw,32px)">
+        <button onClick="{{ goHome }}" style="background:none;border:none;color:{{ navHomeC }};border-bottom:2px solid {{ navHomeB }};font-family:Inter,sans-serif;font-weight:500;font-size:14px;cursor:pointer;padding:8px 2px 6px;transition:color .15s, border-color .2s" style-hover="color:#FFFFFF">Home</button>
+        <button onClick="{{ goServizi }}" style="background:none;border:none;color:{{ navServiziC }};border-bottom:2px solid {{ navServiziB }};font-family:Inter,sans-serif;font-weight:500;font-size:14px;cursor:pointer;padding:8px 2px 6px;transition:color .15s, border-color .2s" style-hover="color:#FFFFFF">Servizi</button>
+        <button onClick="{{ goLavori }}" style="background:none;border:none;color:{{ navLavoriC }};border-bottom:2px solid {{ navLavoriB }};font-family:Inter,sans-serif;font-weight:500;font-size:14px;cursor:pointer;padding:8px 2px 6px;transition:color .15s, border-color .2s" style-hover="color:#FFFFFF">Lavori</button>
+        <button onClick="{{ goChi }}" style="background:none;border:none;color:{{ navChiC }};border-bottom:2px solid {{ navChiB }};font-family:Inter,sans-serif;font-weight:500;font-size:14px;cursor:pointer;padding:8px 2px 6px;transition:color .15s, border-color .2s" style-hover="color:#FFFFFF">Chi siamo</button>
+        <button onClick="{{ goContatti }}" style="background:#9A3412;color:#FFFFFF;border:none;border-radius:8px;padding:10px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:14px;cursor:pointer;transition:background .15s" style-hover="background:#7C2D12" style-active="transform:scale(.97)">Richiedi un preventivo</button>
+      </div>
+      <button class="cred-nav-toggle" onClick="{{ toggleMenu }}" aria-label="Menu" style="align-items:center;justify-content:center;width:38px;height:38px;background:none;border:1px solid rgba(255,255,255,0.24);border-radius:8px;color:#FFFFFF;font-size:16px;cursor:pointer">{{ menuIcon }}</button>
     </div>
-  </header>
+    <div style="display:{{ menuDisplay }};flex-direction:column;padding:8px clamp(20px,5vw,72px) 20px;gap:4px;background:#0F172A;border-bottom:1px solid rgba(255,255,255,0.08)">
+      <button onClick="{{ goHome }}" style="background:none;border:none;text-align:left;color:{{ navHomeC }};font-family:Inter,sans-serif;font-weight:500;font-size:15px;cursor:pointer;padding:12px 4px">Home</button>
+      <button onClick="{{ goServizi }}" style="background:none;border:none;text-align:left;color:{{ navServiziC }};font-family:Inter,sans-serif;font-weight:500;font-size:15px;cursor:pointer;padding:12px 4px">Servizi</button>
+      <button onClick="{{ goLavori }}" style="background:none;border:none;text-align:left;color:{{ navLavoriC }};font-family:Inter,sans-serif;font-weight:500;font-size:15px;cursor:pointer;padding:12px 4px">Lavori</button>
+      <button onClick="{{ goChi }}" style="background:none;border:none;text-align:left;color:{{ navChiC }};font-family:Inter,sans-serif;font-weight:500;font-size:15px;cursor:pointer;padding:12px 4px">Chi siamo</button>
+      <button onClick="{{ goContatti }}" style="background:#9A3412;color:#FFFFFF;border:none;border-radius:8px;padding:13px;margin-top:8px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:15px;cursor:pointer;transition:background .15s" style-active="background:#7C2D12;transform:scale(.97)">Richiedi un preventivo</button>
+    </div>
+  </nav>
 
-  <main id="main">
+  <!-- ============ HOME ============ -->
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+    <div data-screen-label="Home">
 
-    <section class="hero">
-      <div class="container">
-        <h1>Siti web che portano <span class="accent">clienti</span> alle PMI italiane.</h1>
-        <p class="lead">Progettiamo e sviluppiamo siti web professionali per piccole e medie imprese a Roma e in tutta Italia. Dal brief al lancio, in tempi certi e con risultati documentati.</p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="/contatti/">Richiedi un preventivo gratuito</a>
-          <a class="link-arrow" href="/lavori/">Scopri i nostri lavori →</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="container">
-        <div class="stats">
-          <div><span class="stat-number">5</span><span class="stat-label">Progetti completati</span></div>
-          <div><span class="stat-number">4+</span><span class="stat-label">Settori serviti</span></div>
-          <div><span class="stat-number">100%</span><span class="stat-label">Clienti autonomi dopo il lancio</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <span class="section-label">Servizi</span>
-        <h2>Cosa facciamo</h2>
-        <div class="grid-3">
-          <div class="card">
-            <div class="card-icon" aria-hidden="true">◆</div>
-            <h3>Sito vetrina professionale</h3>
-            <p>Il tuo biglietto da visita digitale: architettura pensata per i motori di ricerca, design che riflette la tua identità, contenuti ottimizzati per convertire visitatori in clienti.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon" aria-hidden="true">▲</div>
-            <h3>Landing page per campagne</h3>
-            <p>Una pagina focalizzata su un obiettivo specifico — raccogliere contatti, lanciare un servizio, promuovere un'offerta. Struttura basata su principi di persuasione testati: nessun elemento superfluo.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon" aria-hidden="true">●</div>
-            <h3>Restyling e ottimizzazione</h3>
-            <p>Hai già un sito ma non porta risultati? Analizziamo cosa non funziona e lo trasformiamo in uno strumento di acquisizione clienti — senza ripartire da zero.</p>
-          </div>
-        </div>
-        <p style="margin-top: 28px;"><a class="link-arrow" href="/servizi/">Scopri tutti i servizi →</a></p>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="container">
-        <span class="section-label">Case study</span>
-        <h2>Risultati concreti</h2>
-        <p class="lead">Non vendiamo siti: consegniamo strumenti che lavorano per la tua azienda. Due esempi reali.</p>
-        <div class="grid-2" style="margin-top: 32px;">
-          <article class="project-card">
-            <div class="project-cover cover-legale" aria-hidden="true">Studio Legale Marchetti</div>
-            <div class="project-body">
-              <span class="project-tag">Servizi legali · Roma</span>
-              <h3>Da zero contatti online a prima pagina Google in 3 mesi</h3>
-              <p>Richieste di consulenza quadruplicate grazie a un sito ottimizzato per le ricerche locali.</p>
-              <a class="link-arrow" href="/lavori/studio-legale-marchetti/">Vedi il progetto →</a>
+      <!-- HERO -->
+      <section style="position:relative;overflow:hidden;background:#0F172A;padding:150px 0 96px">
+        <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);background-size:56px 56px;pointer-events:none"></div>
+        <div style="position:absolute;top:50%;left:50%;width:900px;height:900px;margin:-450px 0 0 -450px;background:conic-gradient(from 0deg, rgba(79,70,229,0), rgba(79,70,229,0.32), rgba(249,115,22,0.26), rgba(79,70,229,0));filter:blur(70px);opacity:0.4;animation:cred-aurora-rot 56s linear infinite;pointer-events:none"></div>
+        <div style="position:absolute;top:-120px;right:-80px;width:640px;height:520px;background:radial-gradient(closest-side, rgba(79,70,229,0.4), transparent);pointer-events:none"></div>
+        <div data-particles="true" style="position:absolute;inset:0;pointer-events:none"></div>
+        <div style="position:relative;max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px);display:grid;grid-template-columns:1.05fr 0.95fr;gap:64px;align-items:center">
+          <div style="animation:cred-fade .7s ease both">
+            <div style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,0.16);border-radius:999px;padding:7px 14px;margin-bottom:28px">
+              <span style="width:7px;height:7px;border-radius:50%;background:#10B981;display:inline-block"></span>
+              <span style="font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.75)">Agenzia web per PMI · Roma</span>
             </div>
-          </article>
-          <article class="project-card">
-            <div class="project-cover cover-ristorante" aria-hidden="true">Trattoria Da Giorgio</div>
-            <div class="project-body">
-              <span class="project-tag">Ristorazione · Roma</span>
-              <h3>Il 40% delle prenotazioni ora arriva online</h3>
-              <p>Da invisibile sul web a 80 nuove recensioni Google in 3 mesi, con prenotazioni automatizzate.</p>
-              <a class="link-arrow" href="/lavori/trattoria-da-giorgio/">Vedi il progetto →</a>
+            <h1 style="margin:0 0 24px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(42px,5.4vw,72px);line-height:1.08;letter-spacing:-0.03em;color:#FAFAF8;text-wrap:balance">{{ kinHomeA }} {{ rotWordEl }} {{ kinHomeB }}</h1>
+            <p style="margin:0 0 36px;max-width:520px;font-size:18px;line-height:1.7;color:rgba(255,255,255,0.68)">Progettiamo e sviluppiamo siti web professionali per piccole e medie imprese a Roma e in tutta Italia. Dal brief al lancio, in tempi certi e con risultati documentati.</p>
+            <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap">
+              <button data-magnet="true" onClick="{{ goContatti }}" style="background:#9A3412;color:#FFFFFF;border:none;border-radius:8px;padding:16px 30px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:16px;cursor:pointer;transition:background .15s" style-hover="background:#7C2D12">Richiedi un preventivo gratuito</button>
+              <button onClick="{{ goLavori }}" style="background:none;border:none;color:#FAFAF8;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:16px;cursor:pointer;padding:8px 0;border-bottom:2px solid rgba(255,255,255,0.25);transition:border-color .15s" style-hover="border-color:#F97316">Scopri i nostri lavori</button>
             </div>
-          </article>
+            <p style="margin:32px 0 0;font-size:13px;color:rgba(255,255,255,0.58)">Risposta entro 24 ore · Timeline per iscritto · Autonomia garantita dopo il lancio</p>
+          </div>
+
+          <!-- Browser mock -->
+          <div style="position:relative;animation:cred-fade .7s .15s ease both">
+            <div data-tilt="true" style="background:#FFFFFF;border-radius:12px;box-shadow:0 32px 80px rgba(0,0,0,0.45);overflow:hidden;transform:rotate(-1.5deg);will-change:transform">
+              <div style="display:flex;align-items:center;gap:6px;padding:12px 14px;border-bottom:1px solid #F1F5F9">
+                <span style="width:9px;height:9px;border-radius:50%;background:#FCA5A5;display:inline-block"></span>
+                <span style="width:9px;height:9px;border-radius:50%;background:#FCD34D;display:inline-block"></span>
+                <span style="width:9px;height:9px;border-radius:50%;background:#86EFAC;display:inline-block"></span>
+                <span style="margin-left:12px;background:#F1F5F9;border-radius:6px;padding:4px 14px;font-size:11px;color:#6B7280;font-family:Inter,sans-serif">{{ domain }}</span>
+              </div>
+              <div style="background:linear-gradient(135deg, #312E81, #4F46E5);padding:26px 22px">
+                <div style="width:54%;height:14px;border-radius:4px;background:rgba(255,255,255,0.92);margin-bottom:9px"></div>
+                <div style="width:38%;height:14px;border-radius:4px;background:rgba(255,255,255,0.55);margin-bottom:16px"></div>
+                <div style="width:96px;height:30px;border-radius:6px;background:#F97316"></div>
+              </div>
+              <div style="padding:20px 22px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
+                <div style="height:64px;border-radius:8px;background:#F1F5F9"></div>
+                <div style="height:64px;border-radius:8px;background:#F1F5F9"></div>
+                <div style="height:64px;border-radius:8px;background:#F1F5F9"></div>
+              </div>
+              <div style="padding:0 22px 22px;display:flex;flex-direction:column;gap:8px">
+                <div style="width:88%;height:8px;border-radius:4px;background:#E2E8F0"></div>
+                <div style="width:64%;height:8px;border-radius:4px;background:#E2E8F0"></div>
+              </div>
+            </div>
+            <div style="position:absolute;top:-18px;right:-14px;background:#FFFFFF;border-radius:10px;box-shadow:0 12px 32px rgba(0,0,0,0.35);padding:12px 16px;display:flex;align-items:center;gap:10px">
+              <span style="width:8px;height:8px;border-radius:50%;background:#10B981;display:inline-block"></span>
+              <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;color:#111827">×4 richieste di contatto</span>
+            </div>
+            <div style="position:absolute;bottom:-16px;left:-18px;background:#FFFFFF;border-radius:10px;box-shadow:0 12px 32px rgba(0,0,0,0.35);padding:12px 16px;display:flex;align-items:center;gap:10px">
+              <span style="width:8px;height:8px;border-radius:50%;background:#F97316;display:inline-block"></span>
+              <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;color:#111827">1,8s di caricamento</span>
+            </div>
+          </div>
         </div>
-        <p style="margin-top: 28px;"><a class="link-arrow" href="/lavori/">Vedi tutti i progetti →</a></p>
-      </div>
-    </section>
+      </section>
 
-    <section class="section">
-      <div class="container">
-        <span class="section-label">Metodo</span>
-        <h2>Il nostro metodo</h2>
-        <div class="steps" style="margin-top: 32px;">
-          <div class="step">
-            <span class="step-number" aria-hidden="true">1</span>
-            <h3>Ascolto</h3>
-            <p>Prima di toccare il codice, capiamo il tuo business, i tuoi clienti e i tuoi obiettivi. Un brief fatto bene vale metà del progetto.</p>
+      <!-- NUMERI -->
+      <section style="padding:88px 0 72px">
+        <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px);display:grid;grid-template-columns:repeat(auto-fit, minmax(160px, 1fr));gap:32px">
+          <div style="border-top:2px solid #111827;padding-top:24px">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(48px,5vw,68px);line-height:1;letter-spacing:-0.03em;color:#111827"><span data-count="5">0</span></div>
+            <p style="margin:12px 0 0;font-size:15px;color:#6B7280">Progetti completati</p>
           </div>
-          <div class="step">
-            <span class="step-number" aria-hidden="true">2</span>
-            <h3>Strategia</h3>
-            <p>Struttura, contenuti e flusso utente definiti prima di costruire. Ti presentiamo un piano scritto: sai esattamente cosa aspettarti e quando.</p>
+          <div style="border-top:2px solid #111827;padding-top:24px">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(48px,5vw,68px);line-height:1;letter-spacing:-0.03em;color:#111827"><span data-count="4">0</span><span style="color:#F97316">+</span></div>
+            <p style="margin:12px 0 0;font-size:15px;color:#6B7280">Settori serviti</p>
           </div>
-          <div class="step">
-            <span class="step-number" aria-hidden="true">3</span>
-            <h3>Sviluppo</h3>
-            <p>Costruiamo il sito con strumenti professionali. Velocità di consegna senza compromessi sulla qualità. Aggiornamenti in tempo reale durante il processo.</p>
-          </div>
-          <div class="step">
-            <span class="step-number" aria-hidden="true">4</span>
-            <h3>Lancio e autonomia</h3>
-            <p>Pubblichiamo, testiamo le performance e ti insegniamo a gestire i contenuti in autonomia. Non scompariamo dopo la pubblicazione.</p>
+          <div style="border-top:2px solid #111827;padding-top:24px">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(48px,5vw,68px);line-height:1;letter-spacing:-0.03em;color:#111827"><span data-count="100">0</span><span style="color:#F97316">%</span></div>
+            <p style="margin:12px 0 0;font-size:15px;color:#6B7280">Clienti autonomi dopo il lancio</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section section-dark cta-band">
-      <div class="container">
-        <h2>Pronto a dare al tuo business la presenza online che merita?</h2>
-        <p>Raccontaci il tuo progetto. Risponderemo entro 24 ore con una proposta su misura, senza impegno.</p>
-        <a class="btn btn-primary" href="/contatti/">Parliamo del tuo progetto →</a>
-      </div>
-    </section>
+      <!-- ============ MARQUEE LOGHI CLIENTI — SCAFFOLD SPENTO ============
+           TODO(asset reali): fascia scorrevole pronta (riusa il keyframe
+           cred-marquee già definito nell'helmet) ma NON attiva. Per attivarla
+           compilare CLIENT_LOGOS in renderVals() con loghi di clienti REALI
+           e relativo consenso all'uso: hasClientLogos diventa true da solo.
+           NON inserire loghi inventati o non autorizzati. -->
+      <sc-if value="{{ hasClientLogos }}" hint-placeholder-val="{{ false }}">
+        <section style="padding:36px 0;border-top:1px solid #E2E8F0;border-bottom:1px solid #E2E8F0;overflow:hidden">
+          <div style="display:flex;width:max-content;gap:72px;align-items:center;animation:cred-marquee 32s linear infinite">
+            <sc-for list="{{ clientLogosLoop }}" as="lg" hint-placeholder-count="2">
+              <img src="{{ lg.src }}" alt="{{ lg.alt }}" style="height:32px;opacity:0.72;flex-shrink:0"/>
+            </sc-for>
+          </div>
+        </section>
+      </sc-if>
 
-  </main>
+      <!-- SERVIZI PREVIEW -->
+      <section style="padding:56px 0 96px">
+        <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+          <p style="margin:0 0 12px;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#4F46E5">Cosa facciamo</p>
+          <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:44px">
+            <h2 style="margin:0;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(28px,3.4vw,40px);line-height:1.15;letter-spacing:-0.02em;color:#111827">Tre modi per portare il tuo business online</h2>
+            <button onClick="{{ goServizi }}" style="background:none;border:none;color:#4F46E5;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:15px;cursor:pointer;padding:6px 0;border-bottom:2px solid transparent;transition:border-color .15s" style-hover="border-color:#4F46E5">Scopri tutti i servizi →</button>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:20px">
+            <div data-spot="true" data-reveal="up" style="background:#FFFFFF;border:1px solid #E2E8F0;border-radius:14px;padding:32px 28px;transition:box-shadow .2s, transform .2s" style-hover="box-shadow:0 12px 32px rgba(15,23,42,0.08);transform:translateY(-4px)">
+              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:15px;color:#F97316;margin-bottom:18px">01</div>
+              <h3 style="margin:0 0 12px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:20px;letter-spacing:-0.01em;color:#111827">Sito vetrina professionale</h3>
+              <p style="margin:0;font-size:15px;line-height:1.65;color:#6B7280">Il tuo biglietto da visita digitale: architettura pensata per i motori di ricerca, design che riflette la tua identità, contenuti ottimizzati per convertire visitatori in clienti.</p>
+            </div>
+            <div data-spot="true" data-reveal="up" data-reveal-delay="0.1" style="background:#FFFFFF;border:1px solid #E2E8F0;border-radius:14px;padding:32px 28px;transition:box-shadow .2s, transform .2s" style-hover="box-shadow:0 12px 32px rgba(15,23,42,0.08);transform:translateY(-4px)">
+              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:15px;color:#F97316;margin-bottom:18px">02</div>
+              <h3 style="margin:0 0 12px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:20px;letter-spacing:-0.01em;color:#111827">Landing page per campagne</h3>
+              <p style="margin:0;font-size:15px;line-height:1.65;color:#6B7280">Una pagina focalizzata su un obiettivo specifico — raccogliere contatti, lanciare un servizio, promuovere un'offerta. Struttura basata su principi di persuasione testati: nessun elemento superfluo.</p>
+            </div>
+            <div data-spot="true" data-reveal="up" data-reveal-delay="0.2" style="background:#FFFFFF;border:1px solid #E2E8F0;border-radius:14px;padding:32px 28px;transition:box-shadow .2s, transform .2s" style-hover="box-shadow:0 12px 32px rgba(15,23,42,0.08);transform:translateY(-4px)">
+              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:15px;color:#F97316;margin-bottom:18px">03</div>
+              <h3 style="margin:0 0 12px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:20px;letter-spacing:-0.01em;color:#111827">Restyling e ottimizzazione</h3>
+              <p style="margin:0;font-size:15px;line-height:1.65;color:#6B7280">Hai già un sito ma non porta risultati? Analizziamo cosa non funziona e lo trasformiamo in uno strumento di acquisizione clienti — senza ripartire da zero.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
+      <!-- CASE STUDY IN EVIDENZA -->
+      <section style="background:#F1F5F9;padding:96px 0">
+        <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+          <p style="margin:0 0 12px;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#4F46E5">Case study</p>
+          <h2 style="margin:0 0 14px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(28px,3.4vw,40px);line-height:1.15;letter-spacing:-0.02em;color:#111827">Risultati concreti</h2>
+          <p style="margin:0 0 44px;max-width:560px;font-size:17px;line-height:1.7;color:#6B7280">Non vendiamo siti: consegniamo strumenti che lavorano per la tua azienda. Due esempi reali.</p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:24px;margin-bottom:40px">
+            <sc-for list="{{ featured }}" as="item" hint-placeholder-count="2">
+              <div data-spot="true" data-reveal="up" data-reveal-delay="{{ item.delay }}" onClick="{{ item.open }}" style="background:#FFFFFF;border:1px solid #E2E8F0;border-radius:14px;overflow:hidden;cursor:pointer;transition:box-shadow .2s, transform .2s" style-hover="box-shadow:0 16px 40px rgba(15,23,42,0.12);transform:translateY(-4px)">
+                <div style="position:relative;aspect-ratio:16/9;background:linear-gradient(135deg, {{ item.g1 }}, {{ item.g2 }});overflow:hidden">
+                  <div style="position:absolute;left:11%;right:11%;top:16%;bottom:-8%;background:#FFFFFF;border-radius:10px 10px 0 0;box-shadow:0 24px 48px rgba(15,23,42,0.35);overflow:hidden">
+                    <div style="display:flex;align-items:center;gap:5px;padding:9px 12px;border-bottom:1px solid #F1F5F9">
+                      <span style="width:7px;height:7px;border-radius:50%;background:#E2E8F0;display:inline-block"></span>
+                      <span style="width:7px;height:7px;border-radius:50%;background:#E2E8F0;display:inline-block"></span>
+                      <span style="width:7px;height:7px;border-radius:50%;background:#E2E8F0;display:inline-block"></span>
+                    </div>
+                    <div style="padding:14px 16px;display:flex;flex-direction:column;gap:8px">
+                      <div style="width:46%;height:12px;border-radius:4px;background:{{ item.tint }}"></div>
+                      <div style="width:82%;height:8px;border-radius:4px;background:#E2E8F0"></div>
+                      <div style="width:68%;height:8px;border-radius:4px;background:#E2E8F0"></div>
+                      <div style="display:flex;gap:8px;margin-top:4px">
+                        <div style="width:84px;height:26px;border-radius:6px;background:{{ item.tint }}"></div>
+                        <div style="width:84px;height:26px;border-radius:6px;background:#F1F5F9"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="padding:26px 28px">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap">
+                    <span style="background:#EEF2FF;color:#4F46E5;border-radius:999px;padding:5px 12px;font-size:12px;font-weight:500">{{ item.settore }}</span>
+                    <span style="font-size:13px;color:#6B7280">{{ item.luogo }}</span>
+                    {{ item.badge }}
+                  </div>
+                  <h3 style="margin:0 0 10px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:21px;letter-spacing:-0.01em;color:#111827">{{ item.title }}</h3>
+                  <p style="margin:0 0 16px;font-size:15px;line-height:1.6;color:#6B7280">{{ item.excerpt }}</p>
+                  <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:14px;color:#F97316">Vedi il progetto →</span>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+          <button onClick="{{ goLavori }}" style="background:none;border:2px solid #4F46E5;color:#4F46E5;border-radius:8px;padding:13px 26px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:15px;cursor:pointer;transition:background .15s" style-hover="background:#EEF2FF">Vedi tutti i progetti →</button>
+        </div>
+      </section>
+
+      <!-- METODO -->
+      <section style="padding:96px 0">
+        <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+          <p style="margin:0 0 12px;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#4F46E5">Come lavoriamo</p>
+          <h2 style="margin:0 0 48px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(28px,3.4vw,40px);line-height:1.15;letter-spacing:-0.02em;color:#111827">Il nostro metodo</h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:28px">
+            <div data-reveal="up" style="border-top:1px solid #E2E8F0;padding-top:24px">
+              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:36px;color:#F97316;letter-spacing:-0.02em;margin-bottom:16px">01</div>
+              <h3 style="margin:0 0 10px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:18px;color:#111827">Ascolto</h3>
+              <p style="margin:0;font-size:14.5px;line-height:1.65;color:#6B7280">Prima di toccare il codice, capiamo il tuo business, i tuoi clienti e i tuoi obiettivi. Un brief fatto bene vale metà del progetto.</p>
+            </div>
+            <div data-reveal="up" data-reveal-delay="0.08" style="border-top:1px solid #E2E8F0;padding-top:24px">
+              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:36px;color:#F97316;letter-spacing:-0.02em;margin-bottom:16px">02</div>
+              <h3 style="margin:0 0 10px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:18px;color:#111827">Strategia</h3>
+              <p style="margin:0;font-size:14.5px;line-height:1.65;color:#6B7280">Struttura, contenuti e flusso utente definiti prima di costruire. Ti presentiamo un piano scritto: sai esattamente cosa aspettarti e quando.</p>
+            </div>
+            <div data-reveal="up" data-reveal-delay="0.16" style="border-top:1px solid #E2E8F0;padding-top:24px">
+              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:36px;color:#F97316;letter-spacing:-0.02em;margin-bottom:16px">03</div>
+              <h3 style="margin:0 0 10px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:18px;color:#111827">Sviluppo</h3>
+              <p style="margin:0;font-size:14.5px;line-height:1.65;color:#6B7280">Costruiamo il sito con strumenti professionali. Velocità di consegna senza compromessi sulla qualità. Aggiornamenti in tempo reale durante il processo.</p>
+            </div>
+            <div data-reveal="up" data-reveal-delay="0.24" style="border-top:1px solid #E2E8F0;padding-top:24px">
+              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:36px;color:#F97316;letter-spacing:-0.02em;margin-bottom:16px">04</div>
+              <h3 style="margin:0 0 10px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:18px;color:#111827">Lancio e autonomia</h3>
+              <p style="margin:0;font-size:14.5px;line-height:1.65;color:#6B7280">Pubblichiamo, testiamo le performance e ti insegniamo a gestire i contenuti in autonomia. Non scompariamo dopo la pubblicazione.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TESTIMONIANZE "DICONO DI NOI" — SCAFFOLD SPENTO ============
+           TODO(asset reali): la sezione è pronta ma NON attiva. Per attivarla basta
+           compilare l'array TESTIMONIALS in renderVals() con testimonianze REALI
+           (testo, nome, attività, città — con consenso della persona): il flag
+           hasTestimonials diventa true da solo quando l'array non è vuoto.
+           NON inserire testimonianze inventate. -->
+      <sc-if value="{{ hasTestimonials }}" hint-placeholder-val="{{ false }}">
+        <section style="background:#F1F5F9;padding:96px 0">
+          <div class="cred-stack-md" style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px);display:grid;grid-template-columns:0.8fr 1.2fr;gap:clamp(28px,4vw,64px);align-items:start">
+            <div class="cred-sticky-off-md" style="position:sticky;top:110px">
+              <p style="margin:0 0 12px;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#4F46E5">Dicono di noi</p>
+              <h2 style="margin:0 0 14px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(28px,3.4vw,40px);line-height:1.15;letter-spacing:-0.02em;color:#111827">La fiducia si costruisce con i fatti</h2>
+              <p style="margin:0;max-width:420px;font-size:16px;line-height:1.7;color:#6B7280">Le parole di chi ha già lavorato con noi.</p>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:20px">
+              <sc-for list="{{ testimonials }}" as="t" hint-placeholder-count="2">
+                <div data-reveal="up" data-reveal-delay="{{ t.delay }}" style="background:#FFFFFF;border:1px solid #E2E8F0;border-radius:14px;padding:30px 32px">
+                  <p style="margin:0 0 18px;font-size:16px;line-height:1.75;color:#111827">{{ t.text }}</p>
+                  <div style="display:flex;flex-direction:column;gap:2px">
+                    <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:14.5px;color:#111827">{{ t.name }}</span>
+                    <span style="font-size:13px;color:#6B7280">{{ t.role }}</span>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <!-- CTA FINALE -->
+      <section style="background:#0F172A;padding:104px 0;position:relative;overflow:hidden">
+        <div style="position:absolute;bottom:-160px;left:50%;transform:translateX(-50%);width:720px;height:400px;background:radial-gradient(closest-side, rgba(249,115,22,0.22), transparent);pointer-events:none"></div>
+        <div style="position:relative;max-width:760px;margin:0 auto;padding:0 clamp(20px,5vw,72px);text-align:center">
+          <h2 style="margin:0 0 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(30px,4vw,46px);line-height:1.15;letter-spacing:-0.02em;color:#FAFAF8;text-wrap:balance">Pronto a dare al tuo business la presenza online che merita?</h2>
+          <p style="margin:0 0 36px;font-size:17px;line-height:1.7;color:rgba(255,255,255,0.65)">Raccontaci il tuo progetto. Risponderemo entro 24 ore con una proposta su misura, senza impegno.</p>
+          <button data-magnet="true" onClick="{{ goContatti }}" style="background:#9A3412;color:#FFFFFF;border:none;border-radius:8px;padding:16px 32px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:16px;cursor:pointer;transition:background .15s" style-hover="background:#7C2D12">Parliamo del tuo progetto</button>
+        </div>
+      </section>
+    </div>
+  </sc-if>
+
+  <!-- ============ SERVIZI ============ -->
+  <sc-if value="{{ isServizi }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="Servizi" style="background:#FAFAF8">
+      <section style="position:relative;overflow:hidden;background:#EEF2FF;padding:150px 0 88px">
+        <div style="position:absolute;inset:-3%;background:url('assets/bg-servizi.webp') center/cover;pointer-events:none"></div>
+        <div style="position:absolute;right:10%;top:30%;width:180px;height:180px;border:2px dashed rgba(79,70,229,0.3);border-radius:50%;pointer-events:none"></div>
+        <div data-parallax="0.16" style="position:absolute;right:-30px;top:44px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(140px,24vw,320px);line-height:1;letter-spacing:-0.05em;color:transparent;-webkit-text-stroke:2px rgba(79,70,229,0.16);user-select:none;pointer-events:none">05</div>
+        <div style="position:absolute;top:50%;left:50%;width:760px;height:760px;margin:-380px 0 0 -380px;background:conic-gradient(from 90deg, rgba(79,70,229,0), rgba(79,70,229,0.18), rgba(249,115,22,0.15), rgba(79,70,229,0));filter:blur(64px);opacity:0.47;animation:cred-aurora-rot 64s linear infinite;pointer-events:none"></div>
+        <div style="position:absolute;left:7%;bottom:14%;width:120px;height:120px;border:2px solid rgba(79,70,229,0.22);border-radius:50%;pointer-events:none"></div>
+        <div style="position:absolute;left:32%;top:24%;width:48px;height:48px;border:2px solid rgba(249,115,22,0.35);border-radius:12px;pointer-events:none"></div>
+        <div style="position:absolute;right:24%;bottom:6%;width:220px;height:220px;background:radial-gradient(closest-side, rgba(79,70,229,0.15), transparent);pointer-events:none"></div>
+        <div style="position:relative;max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+          <p style="margin:0 0 12px;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#4F46E5">Servizi</p>
+          <h1 style="margin:0 0 18px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(34px,4.5vw,52px);line-height:1.12;letter-spacing:-0.025em;color:#111827;max-width:760px;text-wrap:balance">{{ kinServizi }}</h1>
+          <p style="margin:0;max-width:600px;font-size:18px;line-height:1.7;color:#6B7280">Progettiamo la presenza digitale delle PMI italiane con attenzione al dettaglio, tempi certi e risultati che si misurano.</p>
+        </div>
+      </section>
+
+      <section style="padding:64px 0 96px">
+        <div class="cred-stack-md" style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px);display:grid;grid-template-columns:0.9fr 1.1fr;gap:clamp(28px,4vw,64px);align-items:start">
+
+          <!-- PANNELLO ANTEPRIMA STICKY -->
+          <div class="cred-sticky-off-md" style="position:sticky;top:100px;animation:cred-in-left .7s cubic-bezier(.2,.7,.2,1) both">
+            <div style="background:#FFFFFF;border-radius:14px;box-shadow:0 28px 64px rgba(49,46,129,0.18);overflow:hidden">
+              <div style="display:flex;align-items:center;gap:6px;padding:12px 14px;border-bottom:1px solid #F1F5F9">
+                <span style="width:9px;height:9px;border-radius:50%;background:#FCA5A5;display:inline-block"></span>
+                <span style="width:9px;height:9px;border-radius:50%;background:#FCD34D;display:inline-block"></span>
+                <span style="width:9px;height:9px;border-radius:50%;background:#86EFAC;display:inline-block"></span>
+                <span style="margin-left:12px;background:#F1F5F9;border-radius:6px;padding:4px 14px;font-size:11px;color:#6B7280;transition:color .4s">{{ servUrl }}</span>
+              </div>
+              <div style="padding:30px 28px;background:{{ servTint }};transition:background .55s cubic-bezier(.2,.7,.2,1)">
+                <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:64px;line-height:1;letter-spacing:-0.04em;color:rgba(255,255,255,0.35);margin-bottom:10px">{{ servNum }}</div>
+                <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:24px;letter-spacing:-0.01em;color:#FFFFFF;margin-bottom:8px">{{ servName }}</div>
+                <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,0.18);border-radius:999px;padding:6px 14px">
+                  <span style="width:6px;height:6px;border-radius:50%;background:#FFFFFF;display:inline-block"></span>
+                  <span style="font-size:12.5px;font-weight:600;color:#FFFFFF;letter-spacing:0.04em">{{ servTempo }}</span>
+                </div>
+              </div>
+              <div style="padding:22px 26px;display:flex;flex-wrap:wrap;gap:8px">
+                <sc-for list="{{ servChips }}" as="chip" hint-placeholder-count="3">
+                  <span style="border:1px solid #E2E8F0;background:#FAFAF8;color:#111827;border-radius:999px;padding:7px 14px;font-size:13px;font-weight:500">{{ chip }}</span>
+                </sc-for>
+              </div>
+              <div style="padding:0 26px 24px">
+                <button onClick="{{ goContatti }}" style="width:100%;background:#0F172A;color:#FFFFFF;border:none;border-radius:8px;padding:13px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:14px;cursor:pointer;transition:background .15s" style-hover="background:#1E293B" style-active="transform:scale(.97)">Richiedi questo servizio →</button>
+              </div>
+            </div>
+            <p style="margin:16px 4px 0;font-size:13px;color:#6B7280;text-align:center">Passa il mouse sui servizi per esplorarli</p>
+          </div>
+
+          <!-- LISTA SERVIZI INTERATTIVA -->
+          <div onMouseEnter="{{ serviziPauseOn }}" onMouseLeave="{{ serviziPauseOff }}" style="animation:cred-in-right .7s .1s cubic-bezier(.2,.7,.2,1) both">
+            <sc-for list="{{ servizi }}" as="item" hint-placeholder-count="5">
+              <div onMouseEnter="{{ item.hover }}" onClick="{{ item.hover }}" style="border-top:1px solid {{ item.line }};padding:26px 18px 26px {{ item.padL }};cursor:pointer;background:{{ item.bg }};border-radius:12px;transition:background .35s, padding .4s cubic-bezier(.2,.7,.2,1), border-color .35s">
+                <div style="display:flex;align-items:baseline;gap:18px">
+                  <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;letter-spacing:-0.02em;color:{{ item.numC }};transition:color .35s;flex-shrink:0">{{ item.num }}</span>
+                  <h2 style="margin:0;flex:1;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(20px,2.4vw,27px);letter-spacing:-0.015em;color:{{ item.titleC }};transition:color .35s">{{ item.name }}</h2>
+                  <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:22px;color:{{ item.tint }};opacity:{{ item.arrowO }};transform:translateX({{ item.arrowX }});transition:opacity .35s, transform .4s cubic-bezier(.2,.7,.3,1.3);flex-shrink:0">→</span>
+                </div>
+                <div style="max-height:{{ item.maxH }};opacity:{{ item.descO }};overflow:hidden;transition:max-height .5s cubic-bezier(.2,.7,.2,1), opacity .4s">
+                  <p style="margin:14px 0 0;padding-left:40px;max-width:600px;font-size:15.5px;line-height:1.7;color:#4B5563">{{ item.desc }}</p>
+                </div>
+              </div>
+            </sc-for>
+            <div style="border-top:1px solid #E0E7FF"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESSO -->
+      <section style="background:#0F172A;padding:88px 0">
+        <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+          <h2 style="margin:0 0 52px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(26px,3.2vw,36px);letter-spacing:-0.02em;color:#FAFAF8">Come funziona lavorare con noi</h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(170px, 1fr));gap:24px">
+            <div>
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+                <span style="width:34px;height:34px;border-radius:50%;border:2px solid #F97316;color:#F97316;display:inline-flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;flex-shrink:0">1</span>
+                <span style="flex:1;height:1px;background:rgba(255,255,255,0.14);position:relative;overflow:hidden">
+                  <span style="position:absolute;top:-2.5px;left:-12%;width:12px;height:6px;border-radius:99px;background:#F97316;filter:blur(1px);animation:cred-flow 3.2s 0s linear infinite"></span>
+                </span>
+              </div>
+              <h3 style="margin:0 0 6px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:16px;color:#FAFAF8">Brief gratuito</h3>
+              <p style="margin:0 0 8px;font-size:11px;font-weight:600;letter-spacing:0.04em;color:#F97316">GIORNO 0 · 20-30 MIN</p>
+              <p style="margin:0;font-size:13.5px;line-height:1.6;color:rgba(255,255,255,0.58)">Una chiamata per capire il tuo progetto, i tuoi clienti e cosa ti serve davvero</p>
+            </div>
+            <div>
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+                <span style="width:34px;height:34px;border-radius:50%;border:2px solid #F97316;color:#F97316;display:inline-flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;flex-shrink:0">2</span>
+                <span style="flex:1;height:1px;background:rgba(255,255,255,0.14);position:relative;overflow:hidden">
+                  <span style="position:absolute;top:-2.5px;left:-12%;width:12px;height:6px;border-radius:99px;background:#F97316;filter:blur(1px);animation:cred-flow 3.2s 0.8s linear infinite"></span>
+                </span>
+              </div>
+              <h3 style="margin:0 0 6px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:16px;color:#FAFAF8">Proposta personalizzata</h3>
+              <p style="margin:0 0 8px;font-size:11px;font-weight:600;letter-spacing:0.04em;color:#F97316">ENTRO 48 ORE</p>
+              <p style="margin:0;font-size:13.5px;line-height:1.6;color:rgba(255,255,255,0.58)">Struttura, tempi e costo per iscritto, prima di iniziare a costruire</p>
+            </div>
+            <div>
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+                <span style="width:34px;height:34px;border-radius:50%;border:2px solid #F97316;color:#F97316;display:inline-flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;flex-shrink:0">3</span>
+                <span style="flex:1;height:1px;background:rgba(255,255,255,0.14);position:relative;overflow:hidden">
+                  <span style="position:absolute;top:-2.5px;left:-12%;width:12px;height:6px;border-radius:99px;background:#F97316;filter:blur(1px);animation:cred-flow 3.2s 1.6s linear infinite"></span>
+                </span>
+              </div>
+              <h3 style="margin:0 0 6px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:16px;color:#FAFAF8">Sviluppo con aggiornamenti</h3>
+              <p style="margin:0 0 8px;font-size:11px;font-weight:600;letter-spacing:0.04em;color:#F97316">1-4 SETTIMANE</p>
+              <p style="margin:0;font-size:13.5px;line-height:1.6;color:rgba(255,255,255,0.58)">Vedi il sito crescere con checkpoint regolari, mai in silenzio per settimane</p>
+            </div>
+            <div>
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+                <span style="width:34px;height:34px;border-radius:50%;border:2px solid #F97316;color:#F97316;display:inline-flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;flex-shrink:0">4</span>
+                <span style="flex:1;height:1px;background:rgba(255,255,255,0.14);position:relative;overflow:hidden">
+                  <span style="position:absolute;top:-2.5px;left:-12%;width:12px;height:6px;border-radius:99px;background:#F97316;filter:blur(1px);animation:cred-flow 3.2s 2.4s linear infinite"></span>
+                </span>
+              </div>
+              <h3 style="margin:0 0 6px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:16px;color:#FAFAF8">Lancio</h3>
+              <p style="margin:0 0 8px;font-size:11px;font-weight:600;letter-spacing:0.04em;color:#F97316">GIORNO DEL GO-LIVE</p>
+              <p style="margin:0;font-size:13.5px;line-height:1.6;color:rgba(255,255,255,0.58)">Pubblicazione, test su tutti i dispositivi e handover completo dei contenuti</p>
+            </div>
+            <div>
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+                <span style="width:34px;height:34px;border-radius:50%;background:#9A3412;color:#FFFFFF;display:inline-flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;flex-shrink:0">5</span>
+              </div>
+              <h3 style="margin:0 0 6px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:16px;color:#FAFAF8">Supporto post-lancio</h3>
+              <p style="margin:0 0 8px;font-size:11px;font-weight:600;letter-spacing:0.04em;color:#F97316">SEMPRE</p>
+              <p style="margin:0;font-size:13.5px;line-height:1.6;color:rgba(255,255,255,0.58)">Disponibili per domande, aggiornamenti e ottimizzazioni quando servono</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section style="padding:96px 0">
+        <div style="max-width:820px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+          <h2 style="margin:0 0 40px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(26px,3.2vw,36px);letter-spacing:-0.02em;color:#111827">Domande frequenti</h2>
+          <sc-for list="{{ faqS }}" as="item" hint-placeholder-count="4">
+            <div style="border-bottom:1px solid #E2E8F0">
+              <button onClick="{{ item.toggle }}" style="width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;text-align:left">
+                <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:17px;color:#111827">{{ item.q }}</span>
+                <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:22px;color:#F97316;flex-shrink:0;display:inline-block;transform:{{ item.iconRot }};transition:transform .3s cubic-bezier(.2,.7,.2,1)">{{ item.icon }}</span>
+              </button>
+              <sc-if value="{{ item.open }}" hint-placeholder-val="{{ false }}">
+                <p style="margin:0;padding:0 40px 24px 0;font-size:15.5px;line-height:1.7;color:#6B7280">{{ item.a }}</p>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section style="background:#F1F5F9;padding:88px 0">
+        <div style="max-width:760px;margin:0 auto;padding:0 clamp(20px,5vw,72px);text-align:center">
+          <h2 style="margin:0 0 16px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(26px,3.4vw,38px);letter-spacing:-0.02em;color:#111827">Inizia con una consulenza gratuita</h2>
+          <p style="margin:0 0 32px;font-size:17px;line-height:1.7;color:#6B7280">Nessun impegno. Nessun costo. Solo una conversazione per capire se possiamo aiutarti.</p>
+          <button onClick="{{ goContatti }}" style="background:#9A3412;color:#FFFFFF;border:none;border-radius:8px;padding:15px 30px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:16px;cursor:pointer;transition:background .15s" style-hover="background:#7C2D12" style-active="transform:scale(.97)">Richiedi un preventivo gratuito →</button>
+        </div>
+      </section>
+    </div>
+  </sc-if>
+
+  <!-- ============ LAVORI ============ -->
+  <sc-if value="{{ isLavori }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="Lavori" style="background:#0F172A">
+      <section style="position:relative;overflow:hidden;background:#0F172A;padding:150px 0 72px">
+        <div style="position:absolute;inset:-3%;background:url('assets/bg-lavori.webp') center/cover;pointer-events:none"></div>
+        <div style="position:absolute;top:0;bottom:0;left:0;width:38%;background:linear-gradient(90deg,transparent,rgba(129,140,248,0.14),transparent);pointer-events:none"></div>
+        <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);background-size:56px 56px;pointer-events:none"></div>
+        <div style="position:absolute;top:50%;left:50%;width:860px;height:860px;margin:-430px 0 0 -430px;background:conic-gradient(from 180deg, rgba(249,115,22,0), rgba(249,115,22,0.28), rgba(79,70,229,0.22), rgba(249,115,22,0));filter:blur(68px);opacity:0.4;animation:cred-aurora-rot 60s linear infinite;pointer-events:none"></div>
+        <div style="position:relative;max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+          <div style="position:absolute;top:-120px;right:-40px;width:520px;height:400px;background:radial-gradient(closest-side, rgba(249,115,22,0.16), transparent);pointer-events:none"></div>
+          <p style="margin:0 0 12px;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F97316">Portfolio</p>
+          <h1 style="margin:0 0 18px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(34px,4.5vw,52px);line-height:1.12;letter-spacing:-0.025em;color:#FAFAF8">{{ kinLavori }}</h1>
+          <p style="margin:0;max-width:560px;font-size:18px;line-height:1.7;color:rgba(255,255,255,0.65)">Ogni progetto parte da un problema reale di business. Ecco come li abbiamo risolti.</p>
+
+          <!-- Cluster settori: un'icona per ciascuna categoria dei filtri sotto -->
+          <div style="position:absolute;top:30px;right:6%;width:52px;height:52px;border-radius:50%;background:rgba(79,70,229,0.12);border:1px solid rgba(79,70,229,0.4);display:flex;align-items:center;justify-content:center;animation:cred-float 6s ease-in-out infinite" aria-hidden="true" title="Servizi legali">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M7 7h10M4 7l3-4 3 4-3 5-3-5ZM14 7l3-4 3 4-3 5-3-5Z" stroke="#818CF8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div style="position:absolute;top:120px;right:16%;width:52px;height:52px;border-radius:50%;background:rgba(249,115,22,0.12);border:1px solid rgba(249,115,22,0.4);display:flex;align-items:center;justify-content:center;animation:cred-float 6.6s .4s ease-in-out infinite" aria-hidden="true" title="Ristorazione">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6 2v7a2 2 0 0 0 4 0V2M8 9v13M18 2c-2 0-3 3-3 6s1 4 3 4v9" stroke="#FB923C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div style="position:absolute;top:16px;right:26%;width:52px;height:52px;border-radius:50%;background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.4);display:flex;align-items:center;justify-content:center;animation:cred-float 5.4s .8s ease-in-out infinite" aria-hidden="true" title="Salute e benessere">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 12h4l2-6 4 12 2-6h6" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div style="position:absolute;top:150px;right:35%;width:52px;height:52px;border-radius:50%;background:rgba(14,165,233,0.12);border:1px solid rgba(14,165,233,0.4);display:flex;align-items:center;justify-content:center;animation:cred-float 6.2s .2s ease-in-out infinite" aria-hidden="true" title="Servizi immobiliari">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 11 12 4l9 7M5 10v9h5v-6h4v6h5v-9" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div style="position:absolute;top:56px;right:44%;width:52px;height:52px;border-radius:50%;background:rgba(236,72,153,0.12);border:1px solid rgba(236,72,153,0.4);display:flex;align-items:center;justify-content:center;animation:cred-float 5.8s .6s ease-in-out infinite" aria-hidden="true" title="Moda donna">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 4a2 2 0 1 1 2 2c0 1-2 1.5-2 1.5S10 7 10 6a2 2 0 0 1 2-2ZM12 7.5 3 12l3 2 6-3.3L18 14l3-2-9-4.5Z" stroke="#F472B6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+      </section>
+      <section style="padding:36px 0 96px">
+        <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+
+          <!-- FILTRI SETTORE -->
+          <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px;animation:cred-in-up .6s cubic-bezier(.2,.7,.2,1) both">
+            <sc-for list="{{ lavFilters }}" as="f" hint-placeholder-count="6">
+              <button onClick="{{ f.pick }}" style="background:{{ f.bg }};color:{{ f.c }};border:1px solid {{ f.bd }};border-radius:999px;padding:9px 18px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:13.5px;cursor:pointer;transition:background .25s, color .25s, border-color .25s;animation:{{ f.anim }}" style-hover="border-color:#F97316">{{ f.label }}</button>
+            </sc-for>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:24px">
+            <sc-for list="{{ lavProjects }}" as="item" hint-placeholder-count="5">
+              <div data-peek="true" onClick="{{ item.open }}" style="position:relative;background:#1E293B;border:1px solid rgba(255,255,255,0.08);border-radius:14px;overflow:hidden;cursor:pointer;transition:box-shadow .25s, transform .25s, border-color .25s;animation:cred-in-up .6s {{ item.delay }} cubic-bezier(.2,.7,.2,1) both" style-hover="box-shadow:0 28px 64px rgba(0,0,0,0.55);transform:translateY(-5px);border-color:rgba(249,115,22,0.4)">
+                <div data-shimmer="true" style="position:absolute;inset:0;z-index:4;pointer-events:none;background:linear-gradient(75deg, transparent 42%, rgba(255,255,255,0.12) 50%, transparent 58%);transform:translateX(-120%) skewX(-14deg)"></div>
+                <div style="position:relative;aspect-ratio:16/9;background:linear-gradient(135deg, {{ item.g1 }}, {{ item.g2 }});overflow:hidden">
+                  <div style="position:absolute;inset:0;animation:cred-kenburns 11s {{ item.cursorDelay }} ease-in-out infinite alternate;transform-origin:60% 40%">
+                  <div style="position:absolute;left:11%;right:11%;top:16%;bottom:-40%;background:#FFFFFF;border-radius:10px 10px 0 0;box-shadow:0 24px 48px rgba(15,23,42,0.35);overflow:hidden">
+                    <div style="display:flex;align-items:center;gap:5px;padding:9px 12px;border-bottom:1px solid #F1F5F9;position:relative;z-index:1;background:#FFFFFF">
+                      <span style="width:7px;height:7px;border-radius:50%;background:#E2E8F0;display:inline-block"></span>
+                      <span style="width:7px;height:7px;border-radius:50%;background:#E2E8F0;display:inline-block"></span>
+                      <span style="width:7px;height:7px;border-radius:50%;background:#E2E8F0;display:inline-block"></span>
+                    </div>
+                    <div data-peek-in="true" style="padding:14px 16px;display:flex;flex-direction:column;gap:8px;transition:transform .8s cubic-bezier(.2,.7,.2,1)">
+                      <div style="width:46%;height:12px;border-radius:4px;background:{{ item.tint }}"></div>
+                      <div style="width:82%;height:8px;border-radius:4px;background:#E2E8F0"></div>
+                      <div style="width:68%;height:8px;border-radius:4px;background:#E2E8F0"></div>
+                      <div style="display:flex;gap:8px;margin-top:4px">
+                        <div style="width:84px;height:26px;border-radius:6px;background:{{ item.tint }}"></div>
+                        <div style="width:84px;height:26px;border-radius:6px;background:#F1F5F9"></div>
+                      </div>
+                      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:6px">
+                        <div style="height:44px;border-radius:6px;background:#F1F5F9"></div>
+                        <div style="height:44px;border-radius:6px;background:#F1F5F9"></div>
+                        <div style="height:44px;border-radius:6px;background:#F1F5F9"></div>
+                      </div>
+                      <div style="width:88%;height:8px;border-radius:4px;background:#E2E8F0"></div>
+                      <div style="width:60%;height:8px;border-radius:4px;background:#E2E8F0"></div>
+                      <div style="width:110px;height:26px;border-radius:6px;background:{{ item.tint }};margin-top:4px"></div>
+                    </div>
+                    <div style="position:absolute;width:13px;height:13px;border-radius:50% 50% 50% 4px;background:#FFFFFF;box-shadow:0 2px 8px rgba(15,23,42,0.4);border:1px solid rgba(15,23,42,0.15);animation:cred-cursor 7s {{ item.cursorDelay }} ease-in-out infinite;pointer-events:none;z-index:2"></div>
+                  </div>
+                  </div>
+                  <div style="position:absolute;top:14px;right:14px;z-index:2;background:rgba(15,23,42,0.82);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14);border-radius:10px;padding:8px 14px;display:flex;align-items:baseline;gap:7px">
+                    <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;color:#F97316">{{ item.stat0v }}</span>
+                    <span style="font-size:11px;font-weight:500;color:rgba(255,255,255,0.75);max-width:130px;line-height:1.3">{{ item.stat0l }}</span>
+                  </div>
+                </div>
+                <div style="padding:26px 28px">
+                  <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap">
+                    <span style="background:rgba(79,70,229,0.25);color:#A5B4FC;border-radius:999px;padding:5px 12px;font-size:12px;font-weight:500">{{ item.settore }}</span>
+                    <span style="font-size:13px;color:rgba(255,255,255,0.5)">{{ item.luogo }}</span>
+                    {{ item.badge }}
+                  </div>
+                  <h3 style="margin:0 0 10px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:21px;letter-spacing:-0.01em;color:#FAFAF8">{{ item.title }}</h3>
+                  <p style="margin:0 0 16px;font-size:15px;line-height:1.6;color:rgba(255,255,255,0.6)">{{ item.excerpt }}</p>
+                  <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:14px;color:#F97316">Vedi il progetto →</span>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </section>
+      <section style="background:#0F172A;padding:88px 0">
+        <div style="max-width:760px;margin:0 auto;padding:0 clamp(20px,5vw,72px);text-align:center">
+          <h2 style="margin:0 0 32px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(26px,3.4vw,38px);letter-spacing:-0.02em;color:#FAFAF8;text-wrap:balance">Vorresti un risultato simile per la tua azienda?</h2>
+          <button onClick="{{ goContatti }}" style="background:#9A3412;color:#FFFFFF;border:none;border-radius:8px;padding:15px 30px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:16px;cursor:pointer;transition:background .15s" style-hover="background:#7C2D12" style-active="transform:scale(.97)">Parliamo del tuo progetto →</button>
+        </div>
+      </section>
+    </div>
+  </sc-if>
+
+  <!-- ============ SINGOLO CASE STUDY ============ -->
+  <sc-if value="{{ isCaso }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="Case study">
+      <section style="padding:130px 0 48px">
+        <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px);animation:cred-in-up .7s cubic-bezier(.2,.7,.2,1) both">
+          <button onClick="{{ goLavori }}" style="background:none;border:none;color:#6B7280;font-family:Inter,sans-serif;font-weight:500;font-size:14px;cursor:pointer;padding:0;margin-bottom:32px" style-hover="color:#4F46E5">← Tutti i lavori</button>
+          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:20px">
+            <span style="background:#EEF2FF;color:#4F46E5;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:500">{{ cur.settore }}</span>
+            <span style="font-size:14px;color:#6B7280">{{ cur.luogo }}</span>
+            {{ curBadge }}
+          </div>
+          <h1 style="margin:0 0 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(34px,4.5vw,52px);line-height:1.12;letter-spacing:-0.025em;color:#111827;max-width:800px">{{ kinCaso }}</h1>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <sc-for list="{{ cur.tags }}" as="tag" hint-placeholder-count="3">
+              <span style="border:1px solid #E2E8F0;color:#6B7280;border-radius:999px;padding:5px 13px;font-size:12.5px;font-weight:500;background:#FFFFFF">{{ tag }}</span>
+            </sc-for>
+          </div>
+        </div>
+      </section>
+
+      <!-- HERO VISUAL -->
+      <section style="padding:8px 0 72px">
+        <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+          <div style="position:relative;width:100%;border-radius:18px;background:linear-gradient(135deg, {{ cur.g1 }}, {{ cur.g2 }});overflow:hidden;aspect-ratio:21/9;min-height:280px">
+            {{ curPhotoEl }}
+            <div style="position:absolute;left:14%;right:14%;top:14%;bottom:-10%;background:#FFFFFF;border-radius:12px 12px 0 0;box-shadow:0 32px 64px rgba(15,23,42,0.4);overflow:hidden">
+              <div style="display:flex;align-items:center;gap:6px;padding:12px 16px;border-bottom:1px solid #F1F5F9">
+                <span style="width:9px;height:9px;border-radius:50%;background:#E2E8F0;display:inline-block"></span>
+                <span style="width:9px;height:9px;border-radius:50%;background:#E2E8F0;display:inline-block"></span>
+                <span style="width:9px;height:9px;border-radius:50%;background:#E2E8F0;display:inline-block"></span>
+                <span style="margin-left:12px;background:#F1F5F9;border-radius:6px;padding:4px 16px;font-size:11px;color:#6B7280">{{ cur.slug }}.it</span>
+              </div>
+              <div style="padding:22px 26px;display:flex;flex-direction:column;gap:11px">
+                <div style="width:38%;height:16px;border-radius:5px;background:{{ cur.tint }}"></div>
+                <div style="width:74%;height:9px;border-radius:4px;background:#E2E8F0"></div>
+                <div style="width:60%;height:9px;border-radius:4px;background:#E2E8F0"></div>
+                <div style="display:flex;gap:10px;margin-top:8px">
+                  <div style="width:110px;height:32px;border-radius:7px;background:{{ cur.tint }}"></div>
+                  <div style="width:110px;height:32px;border-radius:7px;background:#F1F5F9"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROBLEMA / SOLUZIONE / RISULTATO -->
+      <section style="padding:0 0 72px">
+        <div style="max-width:900px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+          <div style="position:relative;padding-left:26px">
+            <div data-vbar="100%" style="position:absolute;left:0;top:44px;bottom:44px;width:2px;height:0%;background:linear-gradient(180deg,#F97316,#4F46E5,#10B981);border-radius:2px"></div>
+            <div class="cred-stack-sm" data-reveal="up" style="position:relative;display:grid;grid-template-columns:154px 1fr;gap:28px;padding:40px 0;border-top:1px solid #E2E8F0;align-items:start">
+              <span style="position:absolute;left:-31px;top:44px;width:11px;height:11px;border-radius:50%;background:#F97316;box-shadow:0 0 0 4px #FAFAF8"></span>
+              <h2 style="margin:0;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F97316">Il problema</h2>
+              <p style="margin:0;font-size:16.5px;line-height:1.75;color:#111827">{{ cur.problema }}</p>
+            </div>
+            <div class="cred-stack-sm" data-reveal="up" data-reveal-delay="0.15" style="position:relative;display:grid;grid-template-columns:154px 1fr;gap:28px;padding:40px 0;border-top:1px solid #E2E8F0;align-items:start">
+              <span style="position:absolute;left:-31px;top:44px;width:11px;height:11px;border-radius:50%;background:#4F46E5;box-shadow:0 0 0 4px #FAFAF8"></span>
+              <h2 style="margin:0;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#4F46E5">La soluzione</h2>
+              <p style="margin:0;font-size:16.5px;line-height:1.75;color:#111827">{{ cur.soluzione }}</p>
+            </div>
+            <div class="cred-stack-sm" data-reveal="up" data-reveal-delay="0.3" style="position:relative;display:grid;grid-template-columns:154px 1fr;gap:28px;padding:40px 0;border-top:1px solid #E2E8F0;align-items:start">
+              <span style="position:absolute;left:-31px;top:44px;width:11px;height:11px;border-radius:50%;background:#10B981;box-shadow:0 0 0 4px #FAFAF8"></span>
+              <h2 style="margin:0;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#10B981">Il risultato</h2>
+              <p style="margin:0;font-size:16.5px;line-height:1.75;color:#111827">{{ cur.risultato }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- METRICHE -->
+      <section style="padding:0 0 88px">
+        <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px);display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:20px">
+          <sc-for list="{{ cur.stats }}" as="st" hint-placeholder-count="3">
+            <div style="background:#0F172A;border-radius:14px;padding:32px 30px">
+              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(34px,3.6vw,46px);line-height:1;letter-spacing:-0.03em;color:#F97316;margin-bottom:12px">{{ st.v }}</div>
+              <p style="margin:0;font-size:14.5px;line-height:1.55;color:rgba(255,255,255,0.65)">{{ st.l }}</p>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+
+      <!-- PREV / NEXT -->
+      <section style="padding:0 0 96px">
+        <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px);display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:20px">
+          <button onClick="{{ cur.openPrev }}" style="background:#FFFFFF;border:1px solid #E2E8F0;border-radius:14px;padding:26px 28px;cursor:pointer;text-align:left;transition:box-shadow .2s" style-hover="box-shadow:0 10px 28px rgba(15,23,42,0.08)">
+            <span style="display:block;font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B7280;margin-bottom:10px">← Progetto precedente</span>
+            <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:18px;color:#111827">{{ cur.prevTitle }}</span>
+          </button>
+          <button onClick="{{ cur.openNext }}" style="background:#FFFFFF;border:1px solid #E2E8F0;border-radius:14px;padding:26px 28px;cursor:pointer;text-align:right;transition:box-shadow .2s" style-hover="box-shadow:0 10px 28px rgba(15,23,42,0.08)">
+            <span style="display:block;font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#6B7280;margin-bottom:10px">Progetto successivo →</span>
+            <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:18px;color:#111827">{{ cur.nextTitle }}</span>
+          </button>
+        </div>
+      </section>
+
+      <section style="background:#0F172A;padding:88px 0">
+        <div style="max-width:760px;margin:0 auto;padding:0 clamp(20px,5vw,72px);text-align:center">
+          <h2 style="margin:0 0 32px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(26px,3.4vw,38px);letter-spacing:-0.02em;color:#FAFAF8">Vuoi un risultato simile?</h2>
+          <button onClick="{{ goContatti }}" style="background:#9A3412;color:#FFFFFF;border:none;border-radius:8px;padding:15px 30px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:16px;cursor:pointer;transition:background .15s" style-hover="background:#7C2D12" style-active="transform:scale(.97)">Parliamo del tuo progetto →</button>
+        </div>
+      </section>
+    </div>
+  </sc-if>
+
+  <!-- ============ CHI SIAMO ============ -->
+  <sc-if value="{{ isChi }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="Chi siamo" style="background:#FFFDF8">
+      <section style="position:relative;overflow:hidden;background:#FFF7ED;padding:150px 0 88px">
+        <div style="position:absolute;inset:-3%;background:url('assets/bg-chi.webp') center/cover;pointer-events:none"></div>
+        <div data-parallax="0.14" style="position:absolute;left:-10px;top:10px;font-family:Georgia,serif;font-weight:700;font-size:clamp(220px,34vw,460px);line-height:1;color:rgba(249,115,22,0.13);user-select:none;pointer-events:none">“</div>
+        <div style="position:absolute;right:10%;top:22%;width:260px;height:260px;background:radial-gradient(closest-side, rgba(249,115,22,0.10), transparent);animation:cred-blob 26s ease-in-out infinite;pointer-events:none"></div>
+        <div style="position:absolute;right:28%;bottom:8%;width:70px;height:70px;border:2px solid rgba(249,115,22,0.3);border-radius:50%;pointer-events:none"></div>
+        <div style="position:relative;max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+          <p style="margin:0 0 12px;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F97316">Chi siamo</p>
+          <h1 style="margin:0 0 18px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(34px,4.5vw,52px);line-height:1.12;letter-spacing:-0.025em;color:#111827;max-width:820px;text-wrap:balance">{{ kinChi }}</h1>
+          <p style="margin:0;max-width:600px;font-size:18px;line-height:1.7;color:#6B7280">Due professionisti IT a Roma con una convinzione — e un metodo per dimostrarla.</p>
+        </div>
+      </section><!-- /chi-hero -->
+
+      <section style="padding:16px 0 88px">
+        <div class="cred-stack-md" style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px);display:grid;grid-template-columns:1fr 0.85fr;gap:clamp(28px,4vw,64px);border-top:1px solid #E2E8F0;padding-top:56px;align-items:center">
+          <div>
+            <h2 style="margin:0 0 24px;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F97316">La nostra storia</h2>
+            <p style="margin:0 0 20px;font-size:17px;line-height:1.75;color:#111827">Abbiamo lavorato per anni nell'IT — come sviluppatori, consulenti, project manager — e abbiamo visto da vicino cosa fa davvero funzionare la tecnologia per le aziende: non la piattaforma, non il linguaggio di programmazione, ma la capacità di ascoltare un problema reale e risolverlo nel modo più diretto possibile.</p>
+            <p style="margin:0;font-size:17px;line-height:1.75;color:#111827"><span style="font-weight:500">{{ brand }}</span> nasce da questa convinzione applicata al web. Lavoriamo con PMI italiane che hanno bisogno di una presenza digitale seria, senza i tempi e i costi di un'agenzia strutturata che non le vede nemmeno come cliente prioritario.</p>
+          </div>
+          <div style="animation:cred-in-right .8s .15s cubic-bezier(.2,.7,.2,1) both">
+            <div style="background:#0F172A;border-radius:14px;box-shadow:0 28px 64px rgba(124,45,18,0.22);overflow:hidden">
+              <div style="display:flex;align-items:center;gap:6px;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,0.08)">
+                <span style="width:10px;height:10px;border-radius:50%;background:#FCA5A5;display:inline-block"></span>
+                <span style="width:10px;height:10px;border-radius:50%;background:#FCD34D;display:inline-block"></span>
+                <span style="width:10px;height:10px;border-radius:50%;background:#86EFAC;display:inline-block"></span>
+                <span style="margin-left:10px;font-family:monospace;font-size:11.5px;color:rgba(255,255,255,0.58)">{{ domainName }} — zsh</span>
+              </div>
+              <div data-terminal="true" style="padding:20px 22px;min-height:250px;font-family:'SF Mono',Menlo,Consolas,monospace;font-size:13.5px;line-height:1.9;color:#E2E8F0;white-space:pre-wrap;word-break:break-word"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPETENZE -->
+      <section style="padding:0 0 88px">
+        <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+          <h2 style="margin:0 0 36px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(24px,3vw,32px);letter-spacing:-0.02em;color:#111827">Dove siamo forti</h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:28px 56px">
+            <div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:10px">
+                <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:15px;color:#111827">Sviluppo &amp; performance</span>
+                <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;color:#F97316"><span data-count="95">0</span>%</span>
+              </div>
+              <div style="height:8px;border-radius:99px;background:#FDE8D8;overflow:hidden">
+                <div data-bar="95%" style="height:100%;width:0%;border-radius:99px;background:linear-gradient(90deg,#F97316,#FB923C)"></div>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:10px">
+                <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:15px;color:#111827">SEO locale</span>
+                <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;color:#4F46E5"><span data-count="90">0</span>%</span>
+              </div>
+              <div style="height:8px;border-radius:99px;background:#E0E7FF;overflow:hidden">
+                <div data-bar="90%" style="height:100%;width:0%;border-radius:99px;background:linear-gradient(90deg,#4F46E5,#818CF8)"></div>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:10px">
+                <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:15px;color:#111827">UX &amp; design</span>
+                <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;color:#10B981"><span data-count="85">0</span>%</span>
+              </div>
+              <div style="height:8px;border-radius:99px;background:#D1FAE5;overflow:hidden">
+                <div data-bar="85%" style="height:100%;width:0%;border-radius:99px;background:linear-gradient(90deg,#10B981,#34D399)"></div>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:10px">
+                <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:15px;color:#111827">Contenuti &amp; strategia</span>
+                <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;color:#0EA5E9"><span data-count="88">0</span>%</span>
+              </div>
+              <div style="height:8px;border-radius:99px;background:#E0F2FE;overflow:hidden">
+                <div data-bar="88%" style="height:100%;width:0%;border-radius:99px;background:linear-gradient(90deg,#0EA5E9,#38BDF8)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="background:#F1F5F9;padding:88px 0">
+        <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+          <h2 style="margin:0 0 44px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(26px,3.2vw,36px);letter-spacing:-0.02em;color:#111827">Cosa ci distingue</h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:20px">
+            <div data-spot="true" style="background:#FFFFFF;border:1px solid #E2E8F0;border-radius:14px;padding:32px 28px;transition:box-shadow .2s, transform .2s" style-hover="box-shadow:0 14px 36px rgba(124,45,18,0.12);transform:translateY(-4px)">
+              <div style="width:40px;height:3px;background:#F97316;border-radius:2px;margin-bottom:22px"></div>
+              <h3 style="margin:0 0 12px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:19px;color:#111827">Competenza tecnica, linguaggio umano</h3>
+              <p style="margin:0;font-size:15px;line-height:1.65;color:#6B7280">Sappiamo come funziona un server, un algoritmo SEO, un sistema di automazione. Con i nostri clienti parliamo di contatti, vendite, visibilità — non di tech stack. Il nostro lavoro è tradurre complessità in risultati comprensibili.</p>
+            </div>
+            <div data-spot="true" style="background:#FFFFFF;border:1px solid #E2E8F0;border-radius:14px;padding:32px 28px;transition:box-shadow .2s, transform .2s" style-hover="box-shadow:0 14px 36px rgba(124,45,18,0.12);transform:translateY(-4px)">
+              <div style="width:40px;height:3px;background:#F97316;border-radius:2px;margin-bottom:22px"></div>
+              <h3 style="margin:0 0 12px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:19px;color:#111827">Tempi certi, nessuna sorpresa</h3>
+              <p style="margin:0;font-size:15px;line-height:1.65;color:#6B7280">Prima di iniziare definiamo per iscritto: cosa realizziamo, quando, a quali condizioni. Le sorprese sono piacevoli solo ai compleanni.</p>
+            </div>
+            <div data-spot="true" style="background:#FFFFFF;border:1px solid #E2E8F0;border-radius:14px;padding:32px 28px;transition:box-shadow .2s, transform .2s" style-hover="box-shadow:0 14px 36px rgba(124,45,18,0.12);transform:translateY(-4px)">
+              <div style="width:40px;height:3px;background:#F97316;border-radius:2px;margin-bottom:22px"></div>
+              <h3 style="margin:0 0 12px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:19px;color:#111827">Autonomia garantita al cliente</h3>
+              <p style="margin:0;font-size:15px;line-height:1.65;color:#6B7280">Consegniamo siti che i clienti sanno usare. Ogni progetto include una sessione di formazione. Non vogliamo clienti dipendenti da noi per cambiare una riga di testo.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="padding:96px 0">
+        <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+          <h2 style="margin:0 0 44px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(26px,3.2vw,36px);letter-spacing:-0.02em;color:#111827">Il team</h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:24px;max-width:900px">
+            <div style="display:flex;gap:24px;align-items:flex-start;background:#FFFFFF;border:1px solid #E2E8F0;border-radius:14px;padding:28px;transition:box-shadow .2s, transform .2s" style-hover="box-shadow:0 16px 40px rgba(124,45,18,0.14);transform:translateY(-4px)">
+              <div style="position:relative;width:88px;height:88px;flex-shrink:0">
+                <div style="position:absolute;inset:-7px;border:2px dashed rgba(249,115,22,0.55);border-radius:50%;animation:cred-spin 30s linear infinite"></div>
+                <div style="width:88px;height:88px;border-radius:50%;background:repeating-linear-gradient(45deg, #EEF2FF, #EEF2FF 6px, #E0E7FF 6px, #E0E7FF 12px);display:flex;align-items:center;justify-content:center">
+                  <span style="font-family:monospace;font-size:10px;color:#4F46E5;text-align:center">foto<br>reale</span>
+                </div>
+              </div>
+              <div>
+                <h3 style="margin:0 0 4px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:19px;color:#111827">Nome Persona A</h3>
+                <p style="margin:0 0 12px;font-size:13px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#F97316">Sviluppatore &amp; SEO specialist</p>
+                <p style="margin:0;font-size:14.5px;line-height:1.65;color:#6B7280">Si occupa dell'architettura tecnica, delle performance e del posizionamento organico.</p>
+              </div>
+            </div>
+            <div style="display:flex;gap:24px;align-items:flex-start;background:#FFFFFF;border:1px solid #E2E8F0;border-radius:14px;padding:28px;transition:box-shadow .2s, transform .2s" style-hover="box-shadow:0 16px 40px rgba(124,45,18,0.14);transform:translateY(-4px)">
+              <div style="position:relative;width:88px;height:88px;flex-shrink:0">
+                <div style="position:absolute;inset:-7px;border:2px dashed rgba(79,70,229,0.5);border-radius:50%;animation:cred-spin 30s linear infinite reverse"></div>
+                <div style="width:88px;height:88px;border-radius:50%;background:repeating-linear-gradient(45deg, #EEF2FF, #EEF2FF 6px, #E0E7FF 6px, #E0E7FF 12px);display:flex;align-items:center;justify-content:center">
+                  <span style="font-family:monospace;font-size:10px;color:#4F46E5;text-align:center">foto<br>reale</span>
+                </div>
+              </div>
+              <div>
+                <h3 style="margin:0 0 4px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:19px;color:#111827">Nome Persona B</h3>
+                <p style="margin:0 0 12px;font-size:13px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#F97316">Designer &amp; strategist</p>
+                <p style="margin:0;font-size:14.5px;line-height:1.65;color:#6B7280">Cura l'esperienza utente, l'identità visiva e la struttura dei contenuti.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="background:#0F172A;padding:88px 0">
+        <div style="max-width:760px;margin:0 auto;padding:0 clamp(20px,5vw,72px);text-align:center">
+          <h2 style="margin:0 0 16px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(26px,3.4vw,38px);letter-spacing:-0.02em;color:#FAFAF8">Vuoi conoscerci?</h2>
+          <p style="margin:0 0 32px;font-size:17px;line-height:1.7;color:rgba(255,255,255,0.65)">Scrivici. La prima conversazione è gratuita e senza impegno.</p>
+          <button onClick="{{ goContatti }}" style="background:#9A3412;color:#FFFFFF;border:none;border-radius:8px;padding:15px 30px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:16px;cursor:pointer;transition:background .15s" style-hover="background:#7C2D12" style-active="transform:scale(.97)">Contattaci →</button>
+        </div>
+      </section>
+    </div>
+  </sc-if>
+
+  <!-- ============ CONTATTI ============ -->
+  <sc-if value="{{ isContatti }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="Contatti">
+      <section style="position:relative;overflow:hidden;background:linear-gradient(135deg, #312E81, #4F46E5);padding:150px 0 76px">
+        <div style="position:absolute;inset:-3%;background:url('assets/bg-contatti.webp') center/cover;pointer-events:none"></div>
+        <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.16) 1px, transparent 1px);background-size:24px 24px;pointer-events:none;animation:cred-pan-dots 40s linear infinite"></div>
+        <div style="position:relative;max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+          <p style="margin:0 0 12px;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.7)">Contatti</p>
+          <h1 style="margin:0 0 18px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(34px,4.5vw,52px);line-height:1.12;letter-spacing:-0.025em;color:#FFFFFF">{{ kinContatti }}</h1>
+          <p style="margin:0;max-width:620px;font-size:18px;line-height:1.7;color:rgba(255,255,255,0.78)">Compila il form: ti risponderemo entro 24 ore con una valutazione chiara di come possiamo aiutarti.</p>
+        </div>
+      </section>
+
+      <section style="position:relative;overflow:hidden;padding:56px 0 96px">
+        <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(79,70,229,0.05) 1px, transparent 1px);background-size:22px 22px;pointer-events:none"></div>
+        <div style="position:absolute;top:-80px;left:50%;width:640px;height:420px;margin-left:-320px;background:radial-gradient(closest-side, rgba(249,115,22,0.07), transparent);pointer-events:none"></div>
+        <div class="cred-stack-md" style="position:relative;max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px);display:grid;grid-template-columns:1.15fr 0.85fr;gap:32px;align-items:start">
+
+          <!-- FORM -->
+          <div style="background:#FFFFFF;border:1px solid #E2E8F0;border-radius:16px;padding:clamp(24px,3.5vw,44px);animation:cred-in-left .7s cubic-bezier(.2,.7,.2,1) both;position:relative;overflow:hidden">
+            <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg, #4F46E5, #F97316)"></div>
+            <h2 style="margin:0 0 28px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:22px;letter-spacing:-0.01em;color:#111827">Richiedi un preventivo</h2>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:18px;margin-bottom:18px">
+              <div>
+                <label style="display:block;font-size:13px;font-weight:600;color:#111827;margin-bottom:6px">Nome e cognome *</label>
+                <input value="{{ fNome }}" onChange="{{ onNome }}" placeholder="Mario Rossi" style="width:100%;padding:12px 14px;border:1px solid #E2E8F0;border-radius:8px;font-family:Inter,sans-serif;font-size:15px;background:#FAFAF8;color:#111827;outline:none;transition:border-color .15s, box-shadow .15s" style-focus="border-color:#4F46E5;box-shadow:0 0 0 3px rgba(79,70,229,0.14);background:#FFFFFF">
+              </div>
+              <div>
+                <label style="display:block;font-size:13px;font-weight:600;color:#111827;margin-bottom:6px">Email *</label>
+                <input value="{{ fEmail }}" onChange="{{ onEmail }}" placeholder="mario@tuaazienda.it" style="width:100%;padding:12px 14px;border:1px solid #E2E8F0;border-radius:8px;font-family:Inter,sans-serif;font-size:15px;background:#FAFAF8;color:#111827;outline:none;transition:border-color .15s, box-shadow .15s" style-focus="border-color:#4F46E5;box-shadow:0 0 0 3px rgba(79,70,229,0.14);background:#FFFFFF">
+              </div>
+              <div>
+                <label style="display:block;font-size:13px;font-weight:600;color:#111827;margin-bottom:6px">Telefono</label>
+                <input value="{{ fTel }}" onChange="{{ onTel }}" placeholder="+39 06 1234567" style="width:100%;padding:12px 14px;border:1px solid #E2E8F0;border-radius:8px;font-family:Inter,sans-serif;font-size:15px;background:#FAFAF8;color:#111827;outline:none;transition:border-color .15s, box-shadow .15s" style-focus="border-color:#4F46E5;box-shadow:0 0 0 3px rgba(79,70,229,0.14);background:#FFFFFF">
+              </div>
+              <div>
+                <label style="display:block;font-size:13px;font-weight:600;color:#111827;margin-bottom:6px">Azienda / Studio</label>
+                <input value="{{ fAzienda }}" onChange="{{ onAzienda }}" placeholder="Nome della tua attività" style="width:100%;padding:12px 14px;border:1px solid #E2E8F0;border-radius:8px;font-family:Inter,sans-serif;font-size:15px;background:#FAFAF8;color:#111827;outline:none;transition:border-color .15s, box-shadow .15s" style-focus="border-color:#4F46E5;box-shadow:0 0 0 3px rgba(79,70,229,0.14);background:#FFFFFF">
+              </div>
+            </div>
+            <div style="margin-bottom:18px">
+              <label style="display:block;font-size:13px;font-weight:600;color:#111827;margin-bottom:6px">Tipo di progetto *</label>
+              <select value="{{ fTipo }}" onChange="{{ onTipo }}" style="width:100%;padding:12px 14px;border:1px solid #E2E8F0;border-radius:8px;font-family:Inter,sans-serif;font-size:15px;background:#FAFAF8;color:#111827;outline:none;cursor:pointer" style-focus="border-color:#4F46E5;box-shadow:0 0 0 3px rgba(79,70,229,0.14)">
+                <option value="">Seleziona…</option>
+                <option value="vetrina">Sito vetrina</option>
+                <option value="landing">Landing page</option>
+                <option value="ecommerce">E-commerce</option>
+                <option value="restyling">Restyling</option>
+                <option value="nonso">Non so ancora</option>
+              </select>
+            </div>
+            <div style="margin-bottom:18px">
+              <label style="display:block;font-size:13px;font-weight:600;color:#111827;margin-bottom:6px">Descrivi brevemente il progetto *</label>
+              <textarea value="{{ fDescr }}" onChange="{{ onDescr }}" maxLength="500" rows="4" placeholder="Cosa fa la tua azienda e cosa vorresti dal sito?" style="width:100%;padding:12px 14px;border:1px solid #E2E8F0;border-radius:8px;font-family:Inter,sans-serif;font-size:15px;line-height:1.6;background:#FAFAF8;color:#111827;outline:none;resize:vertical;transition:border-color .15s, box-shadow .15s" style-focus="border-color:#4F46E5;box-shadow:0 0 0 3px rgba(79,70,229,0.14);background:#FFFFFF"></textarea>
+            </div>
+            <div style="margin-bottom:22px">
+              <label style="display:block;font-size:13px;font-weight:600;color:#111827;margin-bottom:6px">Come ci hai trovato?</label>
+              <select value="{{ fFonte }}" onChange="{{ onFonte }}" style="width:100%;padding:12px 14px;border:1px solid #E2E8F0;border-radius:8px;font-family:Inter,sans-serif;font-size:15px;background:#FAFAF8;color:#111827;outline:none;cursor:pointer" style-focus="border-color:#4F46E5;box-shadow:0 0 0 3px rgba(79,70,229,0.14)">
+                <option value="">Seleziona…</option>
+                <option value="google">Google</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="passaparola">Passaparola</option>
+                <option value="altro">Altro</option>
+              </select>
+            </div>
+            <input name="website" tabIndex="-1" autoComplete="off" style="display:none">
+            <label style="display:flex;gap:10px;align-items:flex-start;cursor:pointer;margin-bottom:24px">
+              <input type="checkbox" checked="{{ fPrivacy }}" onChange="{{ onPrivacy }}" style="margin-top:3px;accent-color:#4F46E5;width:16px;height:16px;cursor:pointer">
+              <span style="font-size:13px;line-height:1.6;color:#6B7280">Ho letto l'<span style="color:#4F46E5;text-decoration:underline">informativa privacy</span> e acconsento al trattamento dei dati personali per rispondere alla mia richiesta (art. 6 par. 1 lett. b GDPR) *</span>
+            </label>
+            <sc-if value="{{ hasError }}" hint-placeholder-val="{{ false }}">
+              <div style="background:#FEF2F2;border:1px solid #FECACA;border-radius:8px;padding:12px 16px;margin-bottom:20px;font-size:14px;color:#B91C1C">{{ formError }}</div>
+            </sc-if>
+            <button onClick="{{ submit }}" style="width:100%;background:#9A3412;color:#FFFFFF;border:none;border-radius:8px;padding:16px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:16px;cursor:pointer;transition:background .15s" style-hover="background:#7C2D12" style-active="transform:scale(.97)">Invia la richiesta</button>
+            <p style="margin:14px 0 0;text-align:center;font-size:12.5px;color:#6B7280">Risposta garantita entro 24 ore · Nessuno spam · Nessun impegno</p>
+          </div>
+
+          <!-- INFO + FAQ -->
+          <div style="display:flex;flex-direction:column;gap:24px;animation:cred-in-right .7s .12s cubic-bezier(.2,.7,.2,1) both">
+            <div style="background:#0F172A;border-radius:16px;padding:36px 32px">
+              <div style="display:flex;align-items:center;gap:9px;margin-bottom:20px">
+                <span style="width:8px;height:8px;border-radius:50%;background:#10B981;display:inline-block;animation:cred-pulse-dot 2s ease-in-out infinite"></span>
+                <span style="font-size:12.5px;font-weight:600;color:#6EE7B7;letter-spacing:0.03em">Rispondiamo entro 24 ore</span>
+              </div>
+              <h2 style="margin:0 0 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:19px;color:#FAFAF8">Informazioni di contatto</h2>
+              <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:18px">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;margin-top:3px"><rect x="2" y="4" width="20" height="16" rx="2.5" stroke="#F97316" stroke-width="1.6"/><path d="M3 6.5 12 13 21 6.5" stroke="#F97316" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div>
+                  <p style="margin:0 0 3px;font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.58)">Email</p>
+                  <p style="margin:0;font-size:16px;font-weight:500;color:#F97316">{{ email }}</p>
+                </div>
+              </div>
+              <div style="display:flex;align-items:flex-start;gap:12px">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;margin-top:3px"><rect x="2" y="2" width="20" height="20" rx="3" stroke="#F97316" stroke-width="1.6"/><circle cx="7.5" cy="7.5" r="1.4" fill="#F97316"/><path d="M7.5 11v7M11.5 18v-4.2c0-1.6 1.2-2.6 2.6-2.6 1.4 0 2.4 1 2.4 2.6V18M11.5 11v.6" stroke="#F97316" stroke-width="1.6" stroke-linecap="round"/></svg>
+                <div>
+                  <p style="margin:0 0 3px;font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.58)">LinkedIn</p>
+                  <p style="margin:0;font-size:15px;color:rgba(255,255,255,0.8)">linkedin.com/company/{{ domainName }}</p>
+                </div>
+              </div>
+            </div>
+            <div style="background:#FFFFFF;border:1px solid #E2E8F0;border-radius:16px;padding:32px">
+              <h2 style="margin:0 0 8px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:19px;color:#111827">Domande frequenti</h2>
+              <sc-for list="{{ faqC }}" as="item" hint-placeholder-count="3">
+                <div style="border-bottom:1px solid #F1F5F9">
+                  <button onClick="{{ item.toggle }}" style="width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;text-align:left">
+                    <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:15px;color:#111827">{{ item.q }}</span>
+                    <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:19px;color:#F97316;flex-shrink:0;display:inline-block;transform:{{ item.iconRot }};transition:transform .3s cubic-bezier(.2,.7,.2,1)">{{ item.icon }}</span>
+                  </button>
+                  <sc-if value="{{ item.open }}" hint-placeholder-val="{{ false }}">
+                    <p style="margin:0;padding:0 0 18px;font-size:14px;line-height:1.65;color:#6B7280">{{ item.a }}</p>
+                  </sc-if>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </sc-if>
+
+  <!-- ============ GRAZIE ============ -->
+  <sc-if value="{{ isGrazie }}" hint-placeholder-val="{{ false }}">
+    <div data-screen-label="Grazie" data-confetti="true" style="background:#F0FDF7 url('assets/bg-grazie.webp') center/cover fixed">
+      <section style="min-height:78vh;display:flex;align-items:center;justify-content:center;padding:150px 0 96px">
+        <div style="max-width:620px;margin:0 auto;padding:0 clamp(20px,5vw,72px);text-align:center">
+          <div style="width:84px;height:84px;border-radius:50%;background:#D1FAE5;display:flex;align-items:center;justify-content:center;margin:0 auto 32px;animation:cred-pop .6s cubic-bezier(.2,.7,.3,1.3) both">
+            <svg width="38" height="38" viewBox="0 0 40 40" fill="none">
+              <path d="M9 21l7 7 15-16" stroke="#10B981" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" style="stroke-dasharray:34;stroke-dashoffset:34;animation:cred-check-draw .5s .45s cubic-bezier(.2,.7,.2,1) forwards"></path>
+            </svg>
+          </div>
+          <h1 style="margin:0 0 16px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:clamp(30px,4vw,44px);line-height:1.15;letter-spacing:-0.025em;color:#111827;text-wrap:balance">{{ kinGrazie }}</h1>
+          <p style="margin:0 0 36px;font-size:17px;line-height:1.7;color:#6B7280">Grazie per averci scritto. Abbiamo ricevuto il tuo messaggio e ti contatteremo presto per fissare una breve chiamata conoscitiva. Nel frattempo, puoi dare un'occhiata ai nostri lavori.</p>
+          <button onClick="{{ goLavori }}" style="background:#9A3412;color:#FFFFFF;border:none;border-radius:8px;padding:15px 30px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:16px;cursor:pointer;transition:background .15s" style-hover="background:#7C2D12" style-active="transform:scale(.97)">Scopri i nostri progetti →</button>
+        </div>
+      </section>
+    </div>
+  </sc-if>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background:#0F172A;padding:72px 0 0;overflow:hidden">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)">
+      <div class="cred-stack-md" style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;padding-bottom:56px;border-bottom:1px solid rgba(255,255,255,0.08)">
         <div>
-          <a class="logo" href="/">Creder<span style="color:#A5B4FC">ai</span></a>
-          <p style="margin-top: 12px; max-width: 320px;">Siti web professionali per PMI italiane. Roma e tutta Italia.</p>
+          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;color:#FAFAF8;letter-spacing:-0.02em;margin-bottom:16px">{{ brand }}<span style="color:#F97316">.</span></div>
+          <p style="margin:0 0 20px;max-width:320px;font-size:14.5px;line-height:1.65;color:rgba(255,255,255,0.55)">Progettiamo siti web che portano clienti alle PMI italiane. Roma · tutta Italia.</p>
+          <p style="margin:0;font-size:14px;font-weight:500;color:#F97316">{{ email }}</p>
         </div>
-        <ul class="footer-links">
-          <li><a href="/servizi/">Servizi</a></li>
-          <li><a href="/lavori/">Lavori</a></li>
-          <li><a href="/chi-siamo/">Chi siamo</a></li>
-          <li><a href="/contatti/">Contatti</a></li>
-        </ul>
+        <div>
+          <p style="margin:0 0 18px;font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.58)">Navigazione</p>
+          <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start">
+            <button onClick="{{ goHome }}" style="background:none;border:none;color:rgba(255,255,255,0.72);font-family:Inter,sans-serif;font-size:14px;cursor:pointer;padding:0" style-hover="color:#FFFFFF">Home</button>
+            <button onClick="{{ goServizi }}" style="background:none;border:none;color:rgba(255,255,255,0.72);font-family:Inter,sans-serif;font-size:14px;cursor:pointer;padding:0" style-hover="color:#FFFFFF">Servizi</button>
+            <button onClick="{{ goLavori }}" style="background:none;border:none;color:rgba(255,255,255,0.72);font-family:Inter,sans-serif;font-size:14px;cursor:pointer;padding:0" style-hover="color:#FFFFFF">Lavori</button>
+            <button onClick="{{ goChi }}" style="background:none;border:none;color:rgba(255,255,255,0.72);font-family:Inter,sans-serif;font-size:14px;cursor:pointer;padding:0" style-hover="color:#FFFFFF">Chi siamo</button>
+            <button onClick="{{ goContatti }}" style="background:none;border:none;color:rgba(255,255,255,0.72);font-family:Inter,sans-serif;font-size:14px;cursor:pointer;padding:0" style-hover="color:#FFFFFF">Contatti</button>
+          </div>
+        </div>
+        <div>
+          <p style="margin:0 0 18px;font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.58)">Legale</p>
+          <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start">
+            <span style="color:rgba(255,255,255,0.72);font-size:14px;cursor:pointer" style-hover="color:#FFFFFF">Privacy Policy</span>
+            <span style="color:rgba(255,255,255,0.72);font-size:14px;cursor:pointer" style-hover="color:#FFFFFF">Cookie Policy</span>
+          </div>
+        </div>
       </div>
-      <div class="footer-bottom">
-        <span>© 2026 Crederai — hello@crederai.com</span>
-        <span><a href="/privacy-policy/">Privacy Policy</a> · <a href="/cookie-policy/">Cookie Policy</a></span>
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:24px 0">
+        <p style="margin:0;font-size:13px;color:rgba(255,255,255,0.58)">© 2026 {{ brand }} — Roma, Italia</p>
+        <p style="margin:0;font-size:13px;color:rgba(255,255,255,0.58)">Risposta entro 24 ore · {{ email }}</p>
       </div>
+      <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(72px,14vw,190px);line-height:0.78;letter-spacing:-0.04em;color:rgba(255,255,255,0.05);text-align:center;user-select:none;transform:translateY(18%)">{{ brand }}</div>
     </div>
   </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;brandName&quot;: {
+    &quot;editor&quot;: &quot;enum&quot;,
+    &quot;options&quot;: [&quot;Crederai&quot;, &quot;Nodo Studio&quot;, &quot;Radice Digital&quot;, &quot;Rione Studio&quot;],
+    &quot;default&quot;: &quot;Crederai&quot;,
+    &quot;tsType&quot;: &quot;string&quot;,
+    &quot;section&quot;: &quot;Brand&quot;
+  }
+}">
+class Component extends DCLogic {
+  state = {
+    page: 'home', slug: null, openFaqS: -1, openFaqC: -1, rotIdx: 0, rotFade: false,
+    fNome: '', fEmail: '', fTel: '', fAzienda: '', fTipo: '', fDescr: '', fFonte: '', fPrivacy: false,
+    formError: '', servIdx: 0, lavFilter: 'Tutti', servHover: false, menuOpen: false
+  };
 
-  <div id="cookie-banner" class="cookie-banner" hidden role="dialog" aria-labelledby="cookie-title">
-    <h2 id="cookie-title">Cookie e privacy</h2>
-    <p>Usiamo cookie analitici solo con il tuo consenso, per capire come migliorare il sito. Nessun cookie di profilazione. <a href="/cookie-policy/">Cookie Policy</a></p>
-    <div class="cookie-actions">
-      <button class="btn btn-primary btn-sm" id="cookie-accept">Accetta</button>
-      <button class="btn btn-secondary btn-sm" id="cookie-reject">Rifiuta</button>
-    </div>
-  </div>
+  componentDidMount() {
+    this._onHashChange = () => {
+      if (this._suppressHashChange) { this._suppressHashChange = false; return; }
+      this._applyHash();
+    };
+    window.addEventListener('hashchange', this._onHashChange);
+    this._applyHash();
 
-  <script src="/js/main.js"></script>
+    // Self-healing ticker: the runtime can kill BOTH instance and window
+    // timers, so every entry point checks the heartbeat and revives it.
+    // A window-level rAF loop (rAF survives, as the particles loop proves)
+    // is the primary driver; the interval is a backup for hidden tabs.
+    this._alive = true;
+    window.__credComp = this;
+    this._reviveTicker();
+
+    // scroll progress bar (outside React)
+    const bar = document.createElement('div');
+    bar.style.cssText = 'position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#F97316,#4F46E5);z-index:200;pointer-events:none';
+    document.body.appendChild(bar);
+    this._bar = bar;
+
+    // back-to-top button (outside React, same pattern as the progress bar)
+    const toTop = document.createElement('button');
+    toTop.type = 'button';
+    toTop.setAttribute('aria-label', 'Torna in cima alla pagina');
+    toTop.innerHTML = '&#8593;';
+    toTop.style.cssText = 'position:fixed;right:22px;bottom:22px;width:44px;height:44px;border-radius:50%;background:#0F172A;color:#FFFFFF;border:none;font-size:18px;line-height:1;cursor:pointer;box-shadow:0 8px 24px rgba(15,23,42,0.28);z-index:199;opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .25s,transform .25s,background .15s';
+    toTop.onmouseenter = () => { toTop.style.background = '#1E293B'; };
+    toTop.onmouseleave = () => { toTop.style.background = '#0F172A'; };
+    toTop.onclick = () => {
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    };
+    document.body.appendChild(toTop);
+    this._toTop = toTop;
+
+    // smooth-scroll fisico (Lenis via CDN, modalità default: lo scroll nativo
+    // resta autoritativo, quindi _check/_onScroll continuano a funzionare).
+    // Niente smoothing con prefers-reduced-motion o su puntatori touch.
+    this._lenis = null;
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches &&
+        window.matchMedia('(pointer: fine)').matches) {
+      const initLenis = () => {
+        if (!this._alive || this._lenis || !window.Lenis) return;
+        this._lenis = new window.Lenis();
+        this._lenis.on('scroll', () => { if (this._check) this._check(); });
+        const rafLenis = (t) => {
+          if (!this._lenis) return;
+          this._lenis.raf(t);
+          requestAnimationFrame(rafLenis);
+        };
+        requestAnimationFrame(rafLenis);
+      };
+      if (window.Lenis) initLenis();
+      else if (!document.querySelector('script[data-cred-lenis]')) {
+        const ls = document.createElement('script');
+        ls.setAttribute('data-cred-lenis', '1');
+        ls.src = 'https://unpkg.com/lenis@1.1.14/dist/lenis.min.js';
+        ls.onload = initLenis;
+        document.head.appendChild(ls);
+      }
+    }
+
+    this._onScroll = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+      if (this._toTop && this._toTop.isConnected) {
+        const show = h.scrollTop > 480;
+        this._toTop.style.opacity = show ? '1' : '0';
+        this._toTop.style.pointerEvents = show ? 'auto' : 'none';
+        this._toTop.style.transform = show ? 'translateY(0)' : 'translateY(8px)';
+      }
+      this._reviveTicker();
+      if (this._check) this._check();
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+
+    // shared mouse position for interactive effects
+    this._mouse = { x: -9999, y: -9999 };
+    this._onMove = (e) => { this._mouse.x = e.clientX; this._mouse.y = e.clientY; this._reviveTicker(); };
+    window.addEventListener('mousemove', this._onMove, { passive: true });
+
+    // reveal-on-scroll + counters + tilt — geometry-based with fail-safes.
+    // Elements are only hidden when they are strictly BELOW the viewport at scan
+    // time; a scroll handler + interval reveals them, and disconnected nodes are
+    // dropped, so the page can never end up permanently blank.
+    this._seen = new WeakSet();
+
+    this._revealEl = (el) => {
+      el.dataset.credRev = 'done';
+      // stagger opzionale: data-reveal-delay="0.1" (secondi, anche "0.1s")
+      const delay = parseFloat(el.dataset.revealDelay) || 0;
+      const orig = el.style.transition;
+      el.style.transition = 'opacity .8s cubic-bezier(.2,.7,.2,1) ' + delay + 's, transform .8s cubic-bezier(.2,.7,.2,1) ' + delay + 's';
+      el.style.opacity = '1';
+      el.style.transform = 'translate(0px, 0px)';
+      // le card hanno una transition hover propria nel template: va ripristinata
+      // a reveal concluso, altrimenti l'hover eredita gli 0.8s (+delay) del reveal
+      if (orig) setTimeout(() => { el.style.transition = orig; }, delay * 1000 + 850);
+    };
+
+    this._runCount = (el) => {
+      el.dataset.credCount = 'done';
+      const target = parseFloat(el.dataset.count) || 0;
+      const t0 = performance.now(), dur = 1400;
+      const step = (t) => {
+        const p = Math.min(1, (t - t0) / dur);
+        el.textContent = String(Math.round(target * (1 - Math.pow(1 - p, 3))));
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+
+    // Stateless check: works entirely off DOM markers, so it can never be
+    // stranded by lost instance state.
+    this._check = () => {
+      const vh = window.innerHeight;
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      if (this._bar && this._bar.isConnected) this._bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+      document.querySelectorAll('[data-parallax]').forEach(el => {
+        const f = parseFloat(el.dataset.parallax) || 0;
+        el.style.transform = 'translateY(' + (h.scrollTop * f).toFixed(1) + 'px)';
+      });
+      document.querySelectorAll('[data-cred-rev="wait"]').forEach(el => {
+        const r = el.getBoundingClientRect();
+        if (r.top < vh * 0.92) this._revealEl(el);
+      });
+      document.querySelectorAll('[data-cred-count="wait"]').forEach(el => {
+        const r = el.getBoundingClientRect();
+        if (r.top < vh * 0.9 && r.bottom > 0) this._runCount(el);
+      });
+      document.querySelectorAll('[data-bar]').forEach(el => {
+        if (el.dataset.credBar === 'done') {
+          // idempotent re-assert: re-renders can restore the template's 0%
+          if (el.style.width !== el.dataset.bar) {
+            el.style.transition = 'width 1.3s cubic-bezier(.2,.7,.2,1)';
+            el.style.width = el.dataset.bar;
+          }
+          return;
+        }
+        const r = el.getBoundingClientRect();
+        if (r.top < vh * 0.88 && r.bottom > 0) {
+          el.dataset.credBar = 'done';
+          el.style.transition = 'width 1.3s cubic-bezier(.2,.7,.2,1)';
+          el.style.width = el.dataset.bar;
+        }
+      });
+      document.querySelectorAll('[data-vbar]').forEach(el => {
+        if (el.dataset.credVbar === 'done') {
+          if (el.style.height !== el.dataset.vbar) {
+            el.style.transition = 'height 1.6s cubic-bezier(.2,.7,.2,1)';
+            el.style.height = el.dataset.vbar;
+          }
+          return;
+        }
+        const r = el.getBoundingClientRect();
+        if (r.top < vh * 0.85 && r.bottom > 0) {
+          el.dataset.credVbar = 'done';
+          el.style.transition = 'height 1.6s cubic-bezier(.2,.7,.2,1)';
+          el.style.height = el.dataset.vbar;
+        }
+      });
+      // terminal typing — time-based and stateless: progress derives from
+      // wall clock + DOM markers, so any tick source can advance it
+      document.querySelectorAll('[data-terminal]').forEach(host => {
+        const full = this._termText();
+        let text = host.querySelector('[data-t-text]');
+        if (!text) {
+          host.textContent = '';
+          text = document.createElement('span');
+          text.setAttribute('data-t-text', '1');
+          const cursor = document.createElement('span');
+          cursor.textContent = '▊';
+          cursor.style.cssText = 'color:#F97316;animation:cred-blink 1s step-end infinite';
+          host.appendChild(text);
+          host.appendChild(cursor);
+        }
+        if (!host.dataset.born) {
+          const r = host.getBoundingClientRect();
+          if (r.top < vh && r.bottom > 0) host.dataset.born = String(Date.now());
+          else return;
+        }
+        const pos = Math.min(full.length, Math.floor((Date.now() - parseInt(host.dataset.born, 10)) / 22));
+        if (text.textContent.length !== pos) text.textContent = full.slice(0, pos);
+      });
+    };
+
+    this._scan = () => {
+      // pre-layout guard: don't assign markers until the page actually has height
+      if (document.body.scrollHeight <= window.innerHeight + 1) return;
+      const vh = window.innerHeight;
+      // default: section > div; opt-in per stagger/direzione: data-reveal="left|right|up"
+      // e/o data-reveal-delay (vedi _revealEl). Il guard resta identico: si nasconde
+      // solo ciò che è strettamente sotto il viewport al momento dello scan.
+      document.querySelectorAll('section > div, [data-reveal], [data-reveal-delay]').forEach(el => {
+        if (el.dataset.credRev) return;
+        const r = el.getBoundingClientRect();
+        if (r.top > vh && r.height > 0) {
+          el.dataset.credRev = 'wait';
+          el.style.opacity = '0';
+          const dir = el.dataset.reveal;
+          el.style.transform = dir === 'left' ? 'translateX(-24px)' : dir === 'right' ? 'translateX(24px)' : 'translateY(30px)';
+        } else if (r.height > 0) {
+          el.dataset.credRev = 'done';
+        }
+      });
+      document.querySelectorAll('[data-count]').forEach(el => {
+        if (!el.dataset.credCount) el.dataset.credCount = 'wait';
+      });
+      document.querySelectorAll('[data-particles]').forEach(host => {
+        if (host.clientWidth < 4 || host.clientHeight < 4) return;
+        let c = host.querySelector('canvas');
+        if (c) {
+          const age = Date.now() - (parseInt(c.dataset.born, 10) || 0);
+          const stale = age > 1200 && (c.dataset.f || '') === (c.dataset.fSeen || '');
+          if (c.width < 4 || c.height < 4 || stale) { c.remove(); c = null; }
+          else c.dataset.fSeen = c.dataset.f || '';
+        }
+        if (!c) this._initParticles(host);
+      });
+      document.querySelectorAll('[data-confetti]').forEach(host => {
+        if (host.dataset.credConf) return;
+        host.dataset.credConf = 'done';
+        const wrap = document.createElement('div');
+        wrap.dataset.confWrap = String(Date.now());
+        wrap.style.cssText = 'position:fixed;inset:0;pointer-events:none;z-index:120;overflow:hidden';
+        const colors = ['#F97316', '#4F46E5', '#10B981', '#FACC15', '#EC4899'];
+        for (let i = 0; i < 90; i++) {
+          const p = document.createElement('div');
+          const sz = 6 + Math.random() * 8;
+          p.style.cssText = 'position:absolute;top:-5vh;left:' + (Math.random() * 100).toFixed(1) + 'vw;width:' + sz.toFixed(0) + 'px;height:' + (sz * 0.5).toFixed(0) + 'px;background:' + colors[i % colors.length] + ';border-radius:2px;transform:rotate(' + (Math.random() * 360).toFixed(0) + 'deg);animation:cred-confetti ' + (2.4 + Math.random() * 2.4).toFixed(2) + 's ' + (Math.random() * 0.9).toFixed(2) + 's cubic-bezier(.3,.4,.6,1) forwards';
+          wrap.appendChild(p);
+        }
+        document.body.appendChild(wrap);
+      });
+      document.querySelectorAll('[data-conf-wrap]').forEach(w => {
+        if (Date.now() - (parseInt(w.dataset.confWrap, 10) || 0) > 7000) w.remove();
+      });
+      document.querySelectorAll('[data-magnet]').forEach(el => {
+        if (this._seen.has(el)) return;
+        this._seen.add(el);
+        el.addEventListener('mousemove', (e) => {
+          const r = el.getBoundingClientRect();
+          const x = (e.clientX - r.left - r.width / 2) * 0.14;
+          const y = (e.clientY - r.top - r.height / 2) * 0.22;
+          el.style.transform = 'translate(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px)';
+        });
+        el.addEventListener('mouseleave', () => {
+          el.style.transition = 'transform .4s cubic-bezier(.2,.7,.2,1), background .15s';
+          el.style.transform = 'translate(0px,0px)';
+          setTimeout(() => { el.style.transition = 'background .15s'; }, 420);
+        });
+      });
+      document.querySelectorAll('[data-peek]').forEach(el => {
+        if (this._seen.has(el)) return;
+        this._seen.add(el);
+        el.addEventListener('mouseenter', () => {
+          const inner = el.querySelector('[data-peek-in]');
+          if (inner) inner.style.transform = 'translateY(-34%)';
+          const sh = el.querySelector('[data-shimmer]');
+          if (sh) {
+            sh.style.animation = 'none';
+            void sh.offsetWidth;
+            sh.style.animation = 'cred-shimmer .85s cubic-bezier(.2,.7,.2,1)';
+          }
+        });
+        el.addEventListener('mouseleave', () => {
+          const inner = el.querySelector('[data-peek-in]');
+          if (inner) inner.style.transform = 'translateY(0%)';
+        });
+      });
+      document.querySelectorAll('[data-spot]').forEach(el => {
+        if (this._seen.has(el)) return;
+        this._seen.add(el);
+        el.addEventListener('mousemove', (e) => {
+          const r = el.getBoundingClientRect();
+          el.style.background = 'radial-gradient(560px circle at ' + (e.clientX - r.left) + 'px ' + (e.clientY - r.top) + 'px, rgba(79,70,229,0.08), transparent 45%) #FFFFFF';
+        });
+        el.addEventListener('mouseleave', () => { el.style.background = '#FFFFFF'; });
+      });
+      document.querySelectorAll('[data-tilt]').forEach(el => {
+        if (this._seen.has(el)) return;
+        this._seen.add(el);
+        el.addEventListener('mousemove', (e) => {
+          const r = el.getBoundingClientRect();
+          const rx = ((e.clientY - r.top) / r.height - 0.5) * -5;
+          const ry = ((e.clientX - r.left) / r.width - 0.5) * 6;
+          el.style.transform = 'perspective(900px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg)';
+        });
+        el.addEventListener('mouseleave', () => {
+          el.style.transform = 'perspective(900px) rotate(-1.5deg)';
+        });
+      });
+      this._check();
+    };
+
+    requestAnimationFrame(() => requestAnimationFrame(() => this._scan()));
+  }
+
+  _advanceWord() {
+    this.setState(s => ({ rotIdx: (s.rotIdx + 1) % 4 }));
+  }
+
+  _advanceServizi() {
+    if (this.state.page !== 'servizi' || this.state.servHover) return;
+    const len = this._serviziLen || 5;
+    this.setState(s => ({ servIdx: (s.servIdx + 1) % len }));
+  }
+
+  _reviveTicker() {
+    const now = Date.now();
+    const beat = window.__credTickAt || 0;
+    if (now - beat < 1200 && window.__credRafOn) return;
+    // (re)create both drivers
+    const tick = () => {
+      const c = window.__credComp;
+      if (!c) return;
+      window.__credTickAt = Date.now();
+      window.__credTickN = (window.__credTickN || 0) + 1;
+      if (c._scan) c._scan();
+      if (window.__credTickN % 8 === 0 && c._advanceWord) c._advanceWord();
+      if (window.__credTickN % 6 === 0 && c._advanceServizi) c._advanceServizi();
+    };
+    if (window.__credTick) { clearInterval(window.__credTick); }
+    window.__credTick = setInterval(tick, 450);
+    if (!window.__credRafOn) {
+      window.__credRafOn = true;
+      let lastRun = 0;
+      const loop = (t) => {
+        if (t - lastRun >= 440) {
+          lastRun = t;
+          // only fire if the interval is dead, to avoid double-running
+          if (Date.now() - (window.__credTickAt || 0) >= 430) tick();
+        }
+        requestAnimationFrame(loop);
+      };
+      requestAnimationFrame(loop);
+    }
+    window.__credTickAt = now;
+  }
+
+  componentDidUpdate() {
+    window.__credComp = this;
+    this._reviveTicker();
+    if (this._scan) requestAnimationFrame(() => this._scan());
+  }
+
+  componentWillUnmount() {
+    this._alive = false;
+    if (window.__credComp === this) window.__credComp = null;
+    window.removeEventListener('scroll', this._onScroll);
+    window.removeEventListener('mousemove', this._onMove);
+    window.removeEventListener('hashchange', this._onHashChange);
+    if (this._lenis) { this._lenis.destroy(); this._lenis = null; }
+    if (this._bar) this._bar.remove();
+    if (this._toTop) this._toTop.remove();
+  }
+
+  _termText() {
+    if (!this._termCache) {
+      const P = '\u276F ';
+      this._termCache = [
+        P + 'whoami',
+        'Due professionisti IT — Roma, Italia',
+        P + 'ls competenze/',
+        'sviluppo/  seo/  design/  automazione/',
+        P + 'cat missione.txt',
+        '"Tradurre la tecnologia in clienti reali,\n senza gergo e senza sorprese."',
+        P + 'uptime --clienti',
+        '100% autonomi dopo il lancio ✓'
+      ].join('\n');
+    }
+    return this._termCache;
+  }
+
+  _initParticles(host) {
+    const canvas = document.createElement('canvas');
+    canvas.style.cssText = 'position:absolute;inset:0;width:100%;height:100%';
+    canvas.dataset.born = String(Date.now());
+    let frame = 0;
+    host.appendChild(canvas);
+    const ctx = canvas.getContext('2d');
+    let W = 0, H = 0;
+    const resize = () => {
+      W = canvas.width = host.clientWidth || 1;
+      H = canvas.height = host.clientHeight || 1;
+    };
+    resize();
+    const N = Math.min(90, Math.max(45, Math.round(W / 16)));
+    const pts = Array.from({ length: N }, (_, i) => ({
+      x: Math.random() * W, y: Math.random() * H,
+      vx: (Math.random() - 0.5) * 0.4, vy: (Math.random() - 0.5) * 0.4,
+      r: 1 + Math.random() * 1.7, o: i % 6 === 0
+    }));
+    const loop = () => {
+      if (!this._alive || !canvas.isConnected) return;
+      frame++;
+      canvas.dataset.f = String(frame);
+      if (host.clientWidth !== W || host.clientHeight !== H) resize();
+      ctx.clearRect(0, 0, W, H);
+      const rect = canvas.getBoundingClientRect();
+      const mouse = (window.__credComp && window.__credComp._mouse) || this._mouse;
+      const mx = mouse.x - rect.left, my = mouse.y - rect.top;
+      for (const p of pts) {
+        const dx = mx - p.x, dy = my - p.y, d2 = dx * dx + dy * dy;
+        if (d2 < 25600 && d2 > 4) { p.vx += dx / d2 * 2.2; p.vy += dy / d2 * 2.2; }
+        p.vx = Math.max(-0.7, Math.min(0.7, p.vx * 0.996));
+        p.vy = Math.max(-0.7, Math.min(0.7, p.vy * 0.996));
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < -10) p.x = W + 10; if (p.x > W + 10) p.x = -10;
+        if (p.y < -10) p.y = H + 10; if (p.y > H + 10) p.y = -10;
+      }
+      for (let i = 0; i < pts.length; i++) {
+        for (let j = i + 1; j < pts.length; j++) {
+          const a = pts[i], b = pts[j];
+          const dx = a.x - b.x, dy = a.y - b.y, d2 = dx * dx + dy * dy;
+          if (d2 < 12100) {
+            ctx.strokeStyle = 'rgba(129,140,248,' + (0.30 * (1 - d2 / 12100)).toFixed(3) + ')';
+            ctx.lineWidth = 1;
+            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+          }
+        }
+        const p = pts[i];
+        const dx = mx - p.x, dy = my - p.y, d2 = dx * dx + dy * dy;
+        if (d2 < 25600) {
+          ctx.strokeStyle = 'rgba(249,115,22,' + (0.5 * (1 - d2 / 25600)).toFixed(3) + ')';
+          ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(mx, my); ctx.stroke();
+        }
+        ctx.fillStyle = p.o ? 'rgba(249,115,22,0.85)' : 'rgba(165,180,252,0.7)';
+        ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
+      }
+      requestAnimationFrame(loop);
+    };
+    requestAnimationFrame(loop);
+  }
+
+  go(page, slug) {
+    this._syncHash(page, slug);
+    if (this.state.menuOpen) this.setState({ menuOpen: false });
+    if (this.state.page === page && (slug || null) === this.state.slug) return;
+    const stale = window.__credOv;
+    if (stale) { stale.remove(); window.__credOv = null; }
+    // overlay curtain sul cambio pagina: fade-in ~200ms, swap, fade-out ~250ms
+    // (totale ≤450ms). pointer-events:none, quindi non può mai bloccare click
+    // anche se restasse orfano; il cleanup "stale" qui sopra è la rete di
+    // sicurezza. Con reduced-motion si salta e resta lo swap istantaneo.
+    let ov = null;
+    // this._alive è false solo durante l'_applyHash del mount iniziale:
+    // niente curtain sul primo caricamento/deep-link, solo sui cambi reali
+    if (this._alive && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      ov = document.createElement('div');
+      ov.style.cssText = 'position:fixed;inset:0;z-index:150;background:#0F172A;opacity:0;transition:opacity .2s ease;pointer-events:none';
+      document.body.appendChild(ov);
+      window.__credOv = ov;
+      void ov.offsetWidth;
+      ov.style.opacity = '1';
+    }
+    const commit = () => this.setState({ page, slug: slug || null, formError: '', openFaqS: -1, openFaqC: -1 }, () => {
+      window.scrollTo(0, 0);
+      this._reviveTicker();
+      if (this._scan) this._scan();
+      requestAnimationFrame(() => { window.scrollTo(0, 0); if (this._scan) this._scan(); });
+      if (ov) {
+        ov.style.transition = 'opacity .25s ease';
+        ov.style.opacity = '0';
+        setTimeout(() => { ov.remove(); if (window.__credOv === ov) window.__credOv = null; }, 300);
+      }
+    });
+    if (ov) setTimeout(commit, 200); else commit();
+  }
+
+  _hashFor(page, slug) {
+    if (page === 'caso' && slug) return 'lavori/' + slug;
+    if (page === 'chi') return 'chi-siamo';
+    if (page === 'home') return '';
+    return page;
+  }
+
+  _titleFor(page, title) {
+    const base = 'Crederai';
+    switch (page) {
+      case 'home': return base + ' — Siti web che portano clienti alle PMI italiane';
+      case 'servizi': return 'Servizi | ' + base;
+      case 'lavori': return 'I nostri lavori | ' + base;
+      case 'caso': return (title || 'Case study') + ' — Case Study | ' + base;
+      case 'chi': return 'Chi siamo | ' + base;
+      case 'contatti': return 'Richiedi un preventivo | ' + base;
+      case 'grazie': return 'Grazie per averci contattato | ' + base;
+      default: return base;
+    }
+  }
+
+  _syncHash(page, slug) {
+    const path = this._hashFor(page, slug);
+    if (location.hash.replace(/^#/, '') !== path) {
+      this._suppressHashChange = true;
+      location.hash = path;
+    }
+  }
+
+  _applyHash() {
+    const raw = location.hash.replace(/^#/, '');
+    if (!raw) { this.go('home'); return; }
+    if (raw.startsWith('lavori/')) {
+      this.go('caso', raw.slice('lavori/'.length));
+      return;
+    }
+    const map = { servizi: 'servizi', lavori: 'lavori', 'chi-siamo': 'chi', contatti: 'contatti', grazie: 'grazie' };
+    this.go(map[raw] || 'home');
+  }
+
+  field(k) { return (e) => this.setState({ [k]: e.target.value }); }
+
+  renderVals() {
+    const s = this.state;
+    const brand = this.props.brandName ?? 'Crederai';
+    const domainName = brand.toLowerCase().replace(/[^a-z]/g, '');
+    const domain = domainName + (brand === 'Crederai' ? '.com' : '.it');
+    const email = 'hello@' + domain;
+    const go = (p, sl) => () => this.go(p, sl);
+    const toggleMenu = () => this.setState({ menuOpen: !s.menuOpen });
+    const menuDisplay = s.menuOpen ? 'flex' : 'none';
+    const menuIcon = s.menuOpen ? '✕' : '☰';
+
+    const PROJECTS = [
+      {
+        slug: 'studio-legale-marchetti', title: 'Studio Legale Marchetti', settore: 'Servizi legali', luogo: 'Roma · Prati',
+        tags: ['Sito vetrina', 'SEO locale', 'Google Business'], featured: true,
+        g1: '#312E81', g2: '#4F46E5', tint: '#4F46E5',
+        photo: 'assets/case-studio-legale-marchetti.webp',
+        excerpt: 'Richieste di consulenza ×4 e prima pagina Google in 3 mesi.',
+        problema: "Lo Studio Legale Marchetti operava da 15 anni con una reputazione solida nel quartiere, ma senza presenza online. I potenziali clienti cercavano avvocati su Google e non trovavano nulla. Il sito precedente — creato nel 2014 — non era mobile-friendly, non appariva nelle ricerche locali e aveva un tasso di rimbalzo superiore al 90%.",
+        soluzione: "Nuovo sito vetrina con pagina delle aree di pratica ottimizzata per keyword locali (\u201cavvocato diritto di famiglia Roma Prati\u201d). Scheda Google Business Profile configurata da zero. Form di contatto semplificato con risposta automatica. Sezione FAQ per ridurre le chiamate di primo livello. Struttura mobile-first con focus sulla credibilità: foto reali dello studio, profilo dell'avvocato, riferimenti normativi in linguaggio accessibile.",
+        risultato: "In 3 mesi il sito si è posizionato in prima pagina su Google per le keyword target. Le richieste di consulenza via form sono quadruplicate rispetto al canale precedente (solo telefono). Il cliente gestisce autonomamente l'aggiornamento dei contenuti.",
+        stats: [
+          { v: '1ª', l: 'pagina Google in 3 mesi per le keyword target' },
+          { v: '×4', l: 'richieste di consulenza via form' },
+          { v: '100%', l: 'gestione dei contenuti in autonomia' }
+        ]
+      },
+      {
+        slug: 'trattoria-da-giorgio', title: 'Trattoria Da Giorgio', settore: 'Ristorazione', luogo: 'Roma · Testaccio',
+        tags: ['Sito one-page', 'Prenotazioni', 'Google Business'], featured: true, concept: true,
+        g1: '#7C2D12', g2: '#F97316', tint: '#F97316',
+        excerpt: 'Il 40% delle prenotazioni ora arriva online, in 60 giorni.',
+        problema: "Un locale storico con cucina autentica romana, pieno ogni weekend grazie al passaparola, ma invisibile online. Nessun sito, profilo Google non rivendicato, presenza su TripAdvisor con informazioni errate (orari sbagliati, numero di telefono vecchio). Il titolare perdeva prenotazioni ogni settimana.",
+        soluzione: "Sito one-page essenziale con menu digitale aggiornabile autonomamente, form di prenotazione collegato a WhatsApp Business e foto reali della cucina e del locale (sessione fotografica di 2 ore). Google Business Profile corretto e ottimizzato con orari, foto e risposta alle recensioni esistenti. Integrazione con TheFork per prenotazioni online.",
+        risultato: "Le prenotazioni online hanno raggiunto il 40% del totale in 60 giorni. 80 nuove recensioni Google in 3 mesi. Il titolare ha smesso di rispondere a telefonate per informazioni base (orari, menu, parcheggio), recuperando tempo per la cucina.",
+        stats: [
+          { v: '40%', l: 'delle prenotazioni arriva online, in 60 giorni' },
+          { v: '80', l: 'nuove recensioni Google in 3 mesi' },
+          { v: '0', l: 'telefonate per orari, menu e parcheggio' }
+        ]
+      },
+      {
+        slug: 'fisioactiva-roma', title: 'FisioActiva Roma', settore: 'Salute e benessere', luogo: 'Roma · Parioli',
+        tags: ['Sito vetrina', 'Blog', 'Doctoralia'], featured: false, concept: true,
+        g1: '#064E3B', g2: '#10B981', tint: '#10B981',
+        excerpt: 'Da 7,2 a 1,8 secondi di caricamento e top 5 su Google in 6 settimane.',
+        problema: "Una fisioterapista con studio privato avviato, brava nel lavoro e assente online. La concorrenza nel suo quartiere era forte. Il sito WordPress autocostruito era lento (PageSpeed Score < 30), aveva il certificato SSL scaduto e nessuna visibilità organica su Google. I nuovi pazienti arrivavano quasi esclusivamente su segnalazione.",
+        soluzione: "Sito vetrina nuovo con pagina dei trattamenti ottimizzata per ricerche locali (\u201cfisioterapia Parioli Roma\u201d, \u201cfisioterapista posturale Roma Nord\u201d). Integrazione con Doctoralia per la prenotazione online. Sezione blog con 3 articoli pillar scritti in collaborazione con la dottoressa su dolore cervicale, postura e riabilitazione. Schema.org MedicalBusiness nel codice.",
+        risultato: "Tempo di caricamento da 7,2 secondi a 1,8 secondi. Posizionamento in top 5 su Google per le keyword target in 6 settimane. 12 nuovi pazienti nel primo mese tramite il sito.",
+        stats: [
+          { v: '1,8s', l: 'tempo di caricamento (prima: 7,2s)' },
+          { v: 'Top 5', l: 'su Google in 6 settimane' },
+          { v: '12', l: 'nuovi pazienti nel primo mese dal sito' }
+        ]
+      },
+      {
+        slug: 'immobiliare-capitale', title: 'Immobiliare Capitale', settore: 'Servizi immobiliari', luogo: 'Roma · Tuscolana',
+        tags: ['CMS annunci', 'Lead generation', 'WhatsApp'], featured: false, concept: true,
+        g1: '#0C4A6E', g2: '#0EA5E9', tint: '#0EA5E9',
+        excerpt: 'Il 25% dei contatti arriva ora dal sito, senza commissioni dei portali.',
+        problema: "Piccola agenzia immobiliare con 2 agenti e un buon portafoglio in zona Tuscolana-Appio. Il sito vecchio non mostrava gli annunci in tempo reale, non era collegato agli strumenti interni e richiedeva l'intervento di un tecnico per ogni aggiornamento. Il 90% dei lead arrivava dai portali (Immobiliare.it, Casa.it) con commissioni elevate.",
+        soluzione: "Sito con CMS integrato per la gestione autonoma degli annunci: schede immobile con gallery, planimetria e caratteristiche tecniche. Form di \u201cvalutazione dell'immobile\u201d come strumento principale di lead generation per intercettare proprietari interessati a vendere. SEO locale su keyword a coda lunga. Integrazione WhatsApp per richieste rapide.",
+        risultato: "Il 25% dei contatti arriva ora direttamente dal sito, riducendo la dipendenza dai portali. Gli agenti aggiornano le schede autonomamente in 5 minuti. Il form di valutazione genera 3-5 richieste a settimana da proprietari nuovi.",
+        stats: [
+          { v: '25%', l: 'dei contatti arriva direttamente dal sito' },
+          { v: '3–5', l: 'richieste di valutazione a settimana' },
+          { v: '5 min', l: 'per aggiornare una scheda immobile in autonomia' }
+        ]
+      },
+      {
+        slug: 'boutique-eleonora', title: 'Boutique Eleonora', settore: 'Moda donna', luogo: 'Roma · Pigneto',
+        tags: ['E-commerce', 'Instagram Shopping', 'Newsletter'], featured: false, concept: true,
+        g1: '#831843', g2: '#EC4899', tint: '#EC4899',
+        excerpt: '20 vendite online nelle prime 2 settimane, senza pubblicità.',
+        problema: "Boutique di moda donna indipendente con clientela locale affezionata ma nessun canale online. Durante il lockdown il business si era fermato completamente. Il tentativo di aprire un profilo Instagram era rimasto senza strategia né vendite. Nessun e-commerce, nessuna lista email.",
+        soluzione: "Mini e-commerce con catalogo stagionale (80 prodotti), carrello, pagamento via Stripe e PayPal, gestione ordini dal pannello interno. Integrazione con Instagram Shopping per portare il traffico social direttamente al sito. Popup di raccolta email con sconto primo acquisto (10%). Newsletter mensile configurata su Mailchimp con template riutilizzabile.",
+        risultato: "Prime 20 vendite online nelle 2 settimane dal lancio, senza investimento pubblicitario. Lista email: 340 iscritti nei primi 60 giorni. Il canale online rappresenta oggi il 30% del fatturato nei mesi fuori stagione.",
+        stats: [
+          { v: '20', l: 'vendite nelle prime 2 settimane, senza ads' },
+          { v: '340', l: 'iscritti alla newsletter in 60 giorni' },
+          { v: '30%', l: 'del fatturato nei mesi fuori stagione' }
+        ]
+      }
+    ];
+
+    // badge "Concept" per i progetti placeholder (metriche oneste): oggi solo
+    // Studio Legale Marchetti è un progetto reale con dati verificati
+    const conceptBadge = (p) => p.concept ? React.createElement('span', {
+      style: {
+        border: '1px dashed rgba(249,115,22,0.55)', color: '#F97316',
+        background: 'rgba(249,115,22,0.10)', borderRadius: '999px',
+        padding: '4px 11px', fontSize: '11px', fontWeight: 600,
+        letterSpacing: '0.07em', textTransform: 'uppercase', whiteSpace: 'nowrap'
+      }
+    }, 'Concept') : null;
+
+    const projects = PROJECTS.map((p, i) => ({ ...p, open: go('caso', p.slug), delay: (i * 0.09).toFixed(2) + 's', badge: conceptBadge(p) }));
+    const featured = projects.filter(p => p.featured);
+
+    // TODO(asset reali) — SEZIONI SCAFFOLD SPENTE finché mancano contenuti veri:
+    // 1) TESTIMONIALS: testimonianze reali { text, name, role } (role = attività
+    //    + città, es. "Titolare, Trattoria X — Roma"), con consenso della persona.
+    // 2) CLIENT_LOGOS: loghi clienti reali { src, alt } con consenso all'uso.
+    // Le sezioni in template si accendono da sole appena gli array si popolano.
+    // Restano bloccati da asset reali anche: hover parallasse sulle immagini
+    // portfolio (brief §2.3, servono screenshot/foto veri dei progetti) e le
+    // foto dei due fondatori in "Chi siamo" (placeholder testuale attuale).
+    const TESTIMONIALS = [];
+    const testimonials = TESTIMONIALS.map((t, i) => ({ ...t, delay: (i * 0.1).toFixed(2) }));
+    const hasTestimonials = testimonials.length > 0;
+    const CLIENT_LOGOS = [];
+    const clientLogosLoop = CLIENT_LOGOS.concat(CLIENT_LOGOS);
+    const hasClientLogos = CLIENT_LOGOS.length > 0;
+
+    const lavFilters = ['Tutti', ...new Set(PROJECTS.map(p => p.settore))].map(label => {
+      const on = s.lavFilter === label;
+      return {
+        label,
+        pick: () => this.setState({ lavFilter: label }),
+        bg: on ? '#9A3412' : 'rgba(255,255,255,0.04)',
+        c: on ? '#FFFFFF' : 'rgba(255,255,255,0.7)',
+        bd: on ? '#9A3412' : 'rgba(255,255,255,0.16)',
+        anim: on ? 'cred-glow-pulse 2.2s ease-in-out infinite' : 'none'
+      };
+    });
+    const lavProjects = projects
+      .filter(p => s.lavFilter === 'Tutti' || p.settore === s.lavFilter)
+      .map((p, i) => ({ ...p, delay: (i * 0.08).toFixed(2) + 's', cursorDelay: ((i % 4) * 1.6).toFixed(2) + 's', stat0v: p.stats[0].v, stat0l: p.stats[0].l }));
+
+    let cur = null;
+    if (s.page === 'caso' && s.slug) {
+      const i = PROJECTS.findIndex(p => p.slug === s.slug);
+      if (i >= 0) {
+        const prev = PROJECTS[(i + PROJECTS.length - 1) % PROJECTS.length];
+        const next = PROJECTS[(i + 1) % PROJECTS.length];
+        cur = {
+          ...PROJECTS[i],
+          prevTitle: prev.title, nextTitle: next.title,
+          openPrev: go('caso', prev.slug), openNext: go('caso', next.slug)
+        };
+      }
+    }
+
+    const pageTitle = this._titleFor(s.page, cur ? cur.title : undefined);
+    if (typeof document !== 'undefined' && document.title !== pageTitle) document.title = pageTitle;
+
+    const SERVIZI = [
+      { num: '01', name: 'Sito vetrina professionale', tint: '#4F46E5', url: 'tuaazienda.it', tempo: '2–4 settimane', chips: ['SEO locale', 'Design su misura', 'CMS in autonomia'], desc: "La tua presenza principale online: architettura SEO-friendly, design su misura, contenuti costruiti per convertire. Adatto a studi professionali, artigiani, liberi professionisti e piccole imprese che vogliono essere trovati su Google e fare una prima impressione solida." },
+      { num: '02', name: 'Landing page ad alta conversione', tint: '#F97316', url: 'offerta.tuaazienda.it', tempo: '5 giorni lavorativi', chips: ['Google & Meta Ads', 'Un solo obiettivo', 'Copy persuasivo'], desc: "Una pagina, un obiettivo. Perfetta per campagne Google Ads o Meta, per il lancio di un nuovo servizio o per raccogliere contatti qualificati. Struttura basata su principi di persuasione: nessun elemento superfluo, massima focalizzazione sull'azione del visitatore." },
+      { num: '03', name: 'E-commerce per PMI', tint: '#10B981', url: 'shop.tuaazienda.it', tempo: '4–6 settimane', chips: ['Stripe & PayPal', '10–500 prodotti', 'Mobile-first'], desc: "Vendita online strutturata per realtà con 10-500 prodotti. Carrello ottimizzato, pagamenti sicuri (Stripe, PayPal), esperienza mobile-first. Senza la complessità e i costi di una piattaforma enterprise." },
+      { num: '04', name: 'Restyling e ottimizzazione', tint: '#0EA5E9', url: 'tuaazienda.it/v2', tempo: '2–3 settimane', chips: ['Analisi gratuita', 'Velocità & SEO', 'Interventi mirati'], desc: "Se il tuo sito c'è ma non porta risultati, non serve ripartire da zero. Analizziamo struttura, velocità, contenuti e conversioni, poi interveniamo in modo chirurgico. Prima di qualsiasi proposta, facciamo un'analisi tecnica gratuita." },
+      { num: '05', name: 'Manutenzione e aggiornamenti', tint: '#EC4899', url: 'sempre-online.it', tempo: 'pacchetti mensili', chips: ['Aggiornamenti', 'Sicurezza', 'Performance'], desc: "Il web cambia. Offriamo pacchetti mensili per tenere il sito aggiornato, sicuro e performante, senza che tu debba pensarci." }
+    ];
+    this._serviziLen = SERVIZI.length;
+    const sIdx = Math.min(s.servIdx, SERVIZI.length - 1);
+    const sCur = SERVIZI[sIdx];
+    const servizi = SERVIZI.map((sv, i) => {
+      const on = i === sIdx;
+      return {
+        ...sv,
+        hover: () => this.setState({ servIdx: i }),
+        bg: on ? '#FFFFFF' : 'transparent',
+        line: on ? 'transparent' : '#E0E7FF',
+        padL: on ? '26px' : '18px',
+        numC: on ? sv.tint : '#C7CCF4',
+        titleC: on ? '#111827' : '#6B7280',
+        arrowO: on ? '1' : '0',
+        arrowX: on ? '0px' : '-14px',
+        maxH: on ? '220px' : '0px',
+        descO: on ? '1' : '0'
+      };
+    });
+
+    const FAQ_S = [
+      { q: 'Quanto tempo ci vuole per realizzare un sito?', a: "Dipende dalla complessità. Un sito vetrina standard: 2-4 settimane dalla firma. Una landing page: 5 giorni lavorativi. Condividiamo sempre una timeline precisa prima di iniziare — non lavoriamo senza scadenze chiare." },
+      { q: 'Posso aggiornare i contenuti da solo?', a: "Sì. Tutti i siti includono un pannello di gestione contenuti intuitivo. Ti formiamo noi: dopo 30 minuti sai già pubblicare pagine, aggiornare testi e caricare immagini in autonomia." },
+      { q: 'I prezzi sono indicati sul sito?', a: "No, deliberatamente. Ogni progetto ha dimensioni, obiettivi e contenuti diversi. Preferiamo capire prima le tue esigenze per darti un numero reale — non un range vago. Scrivici: la valutazione iniziale è gratuita." },
+      { q: 'Lavorate solo con clienti a Roma?', a: "No. Collaboriamo con PMI in tutta Italia. La maggior parte del lavoro si svolge da remoto, con videochiamate per i passaggi chiave. La distanza non ha mai impattato la qualità del risultato." }
+    ];
+    const FAQ_C = [
+      { q: 'Cosa succede dopo che invio il form?', a: "Ricevi subito un'email di conferma. Entro 24 ore ti contattiamo per fissare una chiamata conoscitiva di 20-30 minuti, dove capiamo il tuo progetto e valutiamo insieme il percorso migliore." },
+      { q: 'La consulenza iniziale è gratuita?', a: "Sì, sempre. Non facciamo offerte al buio: prima ascoltiamo, poi proponiamo." },
+      { q: 'Quanto costa un sito web?', a: "Dipende dal progetto. Non pubblichiamo prezzi fissi perché ogni realtà ha esigenze diverse. Dopo la chiamata conoscitiva ricevi un preventivo dettagliato e trasparente." }
+    ];
+
+    const faqS = FAQ_S.map((f, i) => ({
+      ...f, open: s.openFaqS === i, icon: '+', iconRot: s.openFaqS === i ? 'rotate(45deg)' : 'rotate(0deg)',
+      toggle: () => this.setState({ openFaqS: s.openFaqS === i ? -1 : i })
+    }));
+    const faqC = FAQ_C.map((f, i) => ({
+      ...f, open: s.openFaqC === i, icon: '+', iconRot: s.openFaqC === i ? 'rotate(45deg)' : 'rotate(0deg)',
+      toggle: () => this.setState({ openFaqC: s.openFaqC === i ? -1 : i })
+    }));
+
+    const submit = () => {
+      if (!s.fNome.trim() || !s.fEmail.trim() || !s.fTipo || !s.fDescr.trim()) {
+        this.setState({ formError: 'Compila i campi obbligatori: nome, email, tipo di progetto e descrizione.' });
+        return;
+      }
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(s.fEmail)) {
+        this.setState({ formError: 'Inserisci un indirizzo email valido.' });
+        return;
+      }
+      if (!s.fPrivacy) {
+        this.setState({ formError: "Per inviare la richiesta devi accettare l'informativa privacy." });
+        return;
+      }
+      this.setState({ fNome: '', fEmail: '', fTel: '', fAzienda: '', fTipo: '', fDescr: '', fFonte: '', fPrivacy: false });
+      this.go('grazie');
+    };
+
+    const rotWords = ['clienti', 'contatti', 'prenotazioni', 'risultati'];
+    const rotWord = rotWords[s.rotIdx % rotWords.length];
+    const rotWordEl = React.createElement('span', {
+      key: 'w' + s.rotIdx,
+      style: {
+        color: '#F97316', display: 'inline-block', whiteSpace: 'nowrap',
+        textDecoration: 'underline', textDecorationThickness: '5px',
+        textUnderlineOffset: '9px', textDecorationColor: 'rgba(249,115,22,0.55)'
+      }
+    }, rotWord.split('').map((ch, i) => React.createElement('span', {
+      key: s.rotIdx + '-' + i,
+      style: {
+        display: 'inline-block',
+        animation: 'cred-letter .55s cubic-bezier(.2,.7,.2,1) both',
+        animationDelay: (i * 0.045) + 's'
+      }
+    }, ch)));
+
+    // Kinetic typography per gli H1 di pagina: split parola-per-parola con
+    // cred-letter e delay incrementale. Le chiavi sono deterministiche, così i
+    // re-render del ticker non ricreano i nodi e l'animazione parte una sola
+    // volta al mount della pagina. Gli stili decorativi (underline/colore)
+    // vanno sui singoli span-parola: text-decoration non si propaga dentro
+    // gli inline-block. Il testo resta concatenato e leggibile dagli SR.
+    const kinSeg = (text, nRef, extra) => String(text).split(/(\s+)/).map((tok, ti) => {
+      if (!tok) return null;
+      if (/^\s+$/.test(tok)) return tok;
+      const d = (nRef.n++) * 0.055;
+      return React.createElement('span', {
+        key: 'kw' + nRef.n + '-' + ti,
+        style: Object.assign({
+          display: 'inline-block',
+          animation: 'cred-letter .5s cubic-bezier(.2,.7,.2,1) both',
+          animationDelay: d + 's'
+        }, extra || {})
+      }, tok);
+    });
+    const kinTitle = (segs, startN) => {
+      const nRef = { n: startN || 0 };
+      return React.createElement(React.Fragment, null, segs.map((sg, si) =>
+        React.createElement(React.Fragment, { key: 'ks' + si }, kinSeg(sg.t, nRef, sg.style))));
+    };
+    const undBlu = { color: '#4F46E5', textDecoration: 'underline', textDecorationThickness: '4px', textUnderlineOffset: '8px', textDecorationColor: 'rgba(79,70,229,0.4)' };
+    const undAra = { color: '#F97316', textDecoration: 'underline', textDecorationThickness: '4px', textUnderlineOffset: '8px', textDecorationColor: 'rgba(249,115,22,0.4)' };
+    const kinHomeA = kinTitle([{ t: 'Siti web che portano' }]);
+    const kinHomeB = kinTitle([{ t: 'alle PMI italiane.' }], 5);
+    const kinServizi = kinTitle([{ t: 'Cinque modi per far ' }, { t: 'lavorare', style: undBlu }, { t: ' il tuo sito.' }]);
+    // punteggiatura colorata subito dopo una parola: va raggruppata in un
+    // nowrap, altrimenti l'inline-block crea un punto di a-capo orfano
+    const kinLavori = (() => { const nRef = { n: 0 }; return React.createElement(React.Fragment, null,
+      kinSeg('I nostri ', nRef),
+      React.createElement('span', { style: { whiteSpace: 'nowrap' } }, kinSeg('lavori', nRef), kinSeg('.', nRef, { color: '#F97316' }))); })();
+    const kinCaso = cur ? kinTitle([{ t: cur.title }]) : null;
+    const kinChi = (() => { const nRef = { n: 0 }; return React.createElement(React.Fragment, null,
+      kinSeg('Un buon sito web è un ', nRef),
+      React.createElement('span', { style: { whiteSpace: 'nowrap' } }, kinSeg('investimento', nRef, undAra), kinSeg(',', nRef)),
+      kinSeg(' non un costo.', nRef)); })();
+    const kinContatti = (() => { const nRef = { n: 0 }; return React.createElement(React.Fragment, null,
+      kinSeg('Parliamo del tuo ', nRef),
+      React.createElement('span', { style: { whiteSpace: 'nowrap' } }, kinSeg('progetto', nRef), kinSeg('.', nRef, { color: '#F97316' }))); })();
+    const kinGrazie = kinTitle([{ t: 'Richiesta ricevuta. Ti rispondiamo entro 24 ore.' }]);
+
+    return {
+      brand, domain, domainName, email, rotWordEl, toggleMenu, menuDisplay, menuIcon,
+      kinHomeA, kinHomeB, kinServizi, kinLavori, kinCaso, kinChi, kinContatti, kinGrazie,
+      navHomeC: s.page === 'home' ? '#FFFFFF' : 'rgba(255,255,255,0.72)',
+      navHomeB: s.page === 'home' ? '#F97316' : 'transparent',
+      navServiziC: s.page === 'servizi' ? '#FFFFFF' : 'rgba(255,255,255,0.72)',
+      navServiziB: s.page === 'servizi' ? '#F97316' : 'transparent',
+      navLavoriC: (s.page === 'lavori' || s.page === 'caso') ? '#FFFFFF' : 'rgba(255,255,255,0.72)',
+      navLavoriB: (s.page === 'lavori' || s.page === 'caso') ? '#F97316' : 'transparent',
+      navChiC: s.page === 'chi' ? '#FFFFFF' : 'rgba(255,255,255,0.72)',
+      navChiB: s.page === 'chi' ? '#F97316' : 'transparent',
+      isHome: s.page === 'home',
+      isServizi: s.page === 'servizi',
+      isLavori: s.page === 'lavori',
+      isCaso: s.page === 'caso' && !!cur,
+      isChi: s.page === 'chi',
+      isContatti: s.page === 'contatti',
+      isGrazie: s.page === 'grazie',
+      goHome: go('home'), goServizi: go('servizi'), goLavori: go('lavori'),
+      goChi: go('chi'), goContatti: go('contatti'),
+      projects, featured, cur, faqS, faqC,
+      curBadge: cur ? conceptBadge(cur) : null,
+      testimonials, hasTestimonials, clientLogosLoop, hasClientLogos,
+      lavFilters, lavProjects,
+      servizi, servNum: sCur.num, servName: sCur.name, servTint: sCur.tint,
+      servUrl: sCur.url, servTempo: sCur.tempo, servChips: sCur.chips,
+      curPhotoEl: (cur && cur.photo) ? React.createElement(React.Fragment, null,
+        React.createElement('img', { src: cur.photo, alt: cur.title, style: { position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' } }),
+        React.createElement('div', { style: { position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(15,23,42,0.55), rgba(15,23,42,0.15))' } })
+      ) : null,
+      fNome: s.fNome, fEmail: s.fEmail, fTel: s.fTel, fAzienda: s.fAzienda,
+      fTipo: s.fTipo, fDescr: s.fDescr, fFonte: s.fFonte, fPrivacy: s.fPrivacy,
+      onNome: this.field('fNome'), onEmail: this.field('fEmail'), onTel: this.field('fTel'),
+      onAzienda: this.field('fAzienda'), onTipo: this.field('fTipo'), onDescr: this.field('fDescr'),
+      onFonte: this.field('fFonte'),
+      onPrivacy: (e) => this.setState({ fPrivacy: e.target.checked }),
+      hasError: !!s.formError, formError: s.formError, submit,
+      serviziPauseOn: () => this.setState({ servHover: true }),
+      serviziPauseOff: () => this.setState({ servHover: false })
+    };
+  }
+}
+</script>
 </body>
 </html>
